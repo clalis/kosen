@@ -1,0 +1,3 @@
+include stdio h include stdlib h include ctype
+h void main int argc char argv FILE
+f1 f2 short int ch if argc printf

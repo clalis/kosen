@@ -1,0 +1,6 @@
+header1: p09.txt
+header2: s15092  2J23  椎名 泰之
+
+
+http://pg-kura.hatenablog.com/entry/20120611/1339376977
+ポインタもう要らなくないですか。
