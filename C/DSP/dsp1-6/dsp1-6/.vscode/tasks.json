@@ -6,8 +6,9 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "msbuild",
+            "command": "C:\\PROGRA~2\\MIB055~1\\2017\\Community\\MSBuild\\15.0\\Bin\\MSBuild.exe",
             "args": [
+                // Set %msbuild% as "C:\PROGRA~2\MIB055~1\2017\Community\MSBuild\15.0\Bin\MSBuild.exe"
                 // Ask msbuild to generate full paths for file names.
                 "/property:GenerateFullPaths=true",
                 "/t:build"
