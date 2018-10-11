@@ -1,0 +1,12 @@
+header1: p07.txt
+header2: s15092  2J23  椎名 泰之
+
+
+http://www.c-tipsref.com/reference/ctype.html
+
+http://www9.plala.or.jp/sgwr-t/c/sec17.html
+
+二度と使うことはないと去年の夏思った筈のscanf
+結局fscanf_s使えるに越したことはない。
+http://wisdom.sakura.ne.jp/programming/c/c58.html
+https://msdn.microsoft.com/ja-jp/library/6ybhk9kc.aspx
