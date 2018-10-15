@@ -9,10 +9,10 @@ class SourceExMain
 
 //        ex = new SourceExample();
 //        ex.setA(10);
-        ex = new SourceExample(3, value, "Hello world!");
+        ex = new SourceExample("C:\\Users\\TeamET\\Downloads\\kosen\\Java\\PracticalProgramming2\\example02\\res\\sample.dat");
 
-        System.out.println("Object's a is " + ex.getA() + ".");
-        ex.showAllContentsOfB();
-        System.out.println(ex.getStr());
+//        System.out.println("Object's a is " + ex.getA() + ".");
+//        ex.showAllContentsOfB();
+//        System.out.println(ex.getStr());
     }
 }
