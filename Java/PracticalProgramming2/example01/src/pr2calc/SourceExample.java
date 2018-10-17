@@ -2,9 +2,9 @@ package pr2calc;
 
 public class SourceExample
 {
-    public int a;
-    public int[][] b;
-    public String str;
+    private int a;
+    private int[][] b;
+    private String str;
 
     public SourceExample()
     {
@@ -56,12 +56,12 @@ public class SourceExample
 
     public void showAllContentsOfB()
     {
-        for (int i = 0; i < this.b.length; i++)
+        for (int[] aB : this.b)
         {
-            for (int j = 0; j < this.b[i].length; j++)
+            for (int j = 0; j < aB.length; j++)
             {
-                System.out.print(" " + this.b[i][j]);
-                if (j >= (this.b[i].length - 1))   break;
+                System.out.print(" " + aB[j]);
+                if (j >= (aB.length - 1)) break;
                 System.out.print(",");
             }
             System.out.println();
