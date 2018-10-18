@@ -7,7 +7,7 @@
             "label": "build",
             "type": "shell",
             // Use "MIB055~1" at school or "MICROS~1" at home.
-            "command": "C:\\PROGRA~2\\MICROS~1\\2017\\Community\\MSBuild\\15.0\\Bin\\MSBuild.exe",
+            "command": "C:\\PROGRA~2\\MIB055~1\\2017\\Community\\MSBuild\\15.0\\Bin\\MSBuild.exe",
             "args": [
                 // Set %msbuild% as "C:\PROGRA~2\MIB055~1\2017\Community\MSBuild\15.0\Bin\MSBuild.exe"
                 // Ask msbuild to generate full paths for file names.
