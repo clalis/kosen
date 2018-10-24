@@ -1,6 +1,7 @@
-//4J23 pp2ex2-3
+//4J23 Shina
 import pr2calc.SourceExample;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 class SourceExMain
@@ -9,11 +10,19 @@ class SourceExMain
     {
         SourceExample ex;
 //        int[][] value = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-
+//
 //        ex = new SourceExample();
 //        ex.setA(10);
 
         ex = new SourceExample();
+        try
+        {
+            ex.saveData("savedSample");
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
 
 /*
         if (args.length == 1) ex = new SourceExample(args[0]);
