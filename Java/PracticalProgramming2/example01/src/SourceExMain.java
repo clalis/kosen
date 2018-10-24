@@ -1,4 +1,4 @@
-//4J23 pp2ex1
+//4J23 Shina
 import pr2calc.SourceExample;
 
 class SourceExMain
