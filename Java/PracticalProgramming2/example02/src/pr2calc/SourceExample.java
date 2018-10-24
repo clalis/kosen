@@ -1,9 +1,11 @@
 package pr2calc;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import javax.management.AttributeList;
+import java.io.*;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.stream.Collectors;
 
 public class SourceExample
@@ -30,6 +32,21 @@ public class SourceExample
 //        this.b = b;
 //        this.str = str;
 //    }
+
+    public SourceExample()
+    {
+        try
+        {
+            saveData("savedSample");
+        }
+        catch (IOException e)
+        {
+            System.out.println("Failed to open files.");
+            e.printStackTrace();
+            System.exit(1);
+        }
+
+    }
 
     public SourceExample(String fileName)
     {
@@ -125,5 +142,26 @@ public class SourceExample
             }
         }
         reader.close();
+    }
+
+    private void saveData(String saveFileName) throws IOException
+    {
+        int n = 5;
+        Integer[] sizeIntegers = {5, 5};
+        String s = "Hello world!";
+        List<ArrayList<Object>> lists = new ArrayList<>();
+        PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(saveFileName + ".dat")));
+
+        lists.add(new ArrayList<>(Arrays.asList(n)));
+        lists.add(new ArrayList<>(Arrays.asList(sizeIntegers)));
+        for (int i = 0; i < sizeIntegers[0]; i++) {
+            List<Object> objects = new ArrayList<>();
+            for (int j = 0; j < sizeIntegers[1]; j++) objects.add(i * j);
+            lists.add((ArrayList<Object>) objects);
+        }
+        lists.add(new ArrayList<>(Collections.singleton(s)));
+//        System.out.println(lists);
+
+        writer.close();
     }
 }

@@ -12,6 +12,10 @@ class SourceExMain
 
 //        ex = new SourceExample();
 //        ex.setA(10);
+
+        ex = new SourceExample();
+
+/*
         if (args.length == 1) ex = new SourceExample(args[0]);
         else
         {
@@ -29,5 +33,6 @@ class SourceExMain
         System.out.println("Object's a is " + ex.getA() + ".");
         ex.showAllContentsOfB();
         System.out.println(ex.getStr());
+*/
     }
 }
