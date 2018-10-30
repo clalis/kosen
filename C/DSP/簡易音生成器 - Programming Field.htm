@@ -1,0 +1,107 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0038)https://www.pg-fl.jp/music/hzmaker.htm -->
+<!--?xml version="1.0" encoding="UTF-8"?--><!DOCTYPE html PUBLIC "" ""><HTML 
+lang="ja" lang="ja" dir="ltr" xml:lang="ja" 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# "><META 
+content="IE=11.0000" http-equiv="X-UA-Compatible">
+ <TITLE>簡易音生成器 - Programming Field</TITLE> 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META name="description" content="簡易音生成器は周波数を指定して音を再生します。複数の異なる周波数に基づいた音を同時再生することで和音を再生することができます。"> 
+<META name="viewport" content="width=device-width, initial-scale=1"> 
+<META content="簡易音生成器 - Programming Field" property="og:title"> 
+<META content="article" property="og:type"> 
+<META content="簡易音生成器は周波数を指定して音を再生します。複数の異なる周波数に基づいた音を同時再生することで和音を再生することができます。" 
+property="og:description"> 
+<META content="https://www.pg-fl.jp/image/pf.png" property="og:image"> 
+<META content="https://www.pg-fl.jp/music/hzmaker.htm" property="og:url"> 
+<META content="2017-01-29T17:12:00+09:00" property="article:modified_time"> 
+<LINK href="簡易音生成器%20-%20Programming%20Field.files/style.css" rel="stylesheet" 
+type="text/css"> 
+<SCRIPT src="簡易音生成器%20-%20Programming%20Field.files/common.js" type="text/javascript"></SCRIPT>
+ <LINK href="簡易音生成器%20-%20Programming%20Field.files/style(1).css" rel="stylesheet" 
+type="text/css"> <LINK href="簡易音生成器%20-%20Programming%20Field.files/hzmaker.css" 
+rel="stylesheet" type="text/css"> 
+<SCRIPT src="簡易音生成器%20-%20Programming%20Field.files/waveout.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="簡易音生成器%20-%20Programming%20Field.files/hzmaker.js" type="text/javascript"></SCRIPT>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD> 
+<BODY><HEADER>
+<H1><A class="topLink" href="https://www.pg-fl.jp/">Programming 
+Field</A></H1><NAV>
+<UL>
+  <LI><A href="https://www.pg-fl.jp/">トップページ</A></LI>
+  <LI><A href="https://www.pg-fl.jp/music/">music</A></LI>
+  <LI class="thisPage">簡易音生成器</LI></UL></NAV></HEADER>
+<DIV id="content">
+<H2>簡易音生成器</H2>
+<P>周波数を指定して単音/和音を再生します。</P>
+<P class="version">バージョン: 0.5 (alpha)</P>
+<P class="notSupportedMessage">※ お使いのブラウザーでは音を再生できません。</P>
+<H3 id="main_header">メイン画面</H3><DATALIST id="waveFunctions"><OPTION 
+value="sine"><OPTION value="square">	 <OPTION value="triangle">	 <OPTION value="sawtooth"> 
+</OPTION></DATALIST> <NAV class="buttons">
+<UL>
+  <LI><BUTTON class="buttonPlayAll" id="buttonPlayAll">Play All</BUTTON></LI>
+  <LI><BUTTON class="buttonAddRemove" id="buttonAdd">Add</BUTTON></LI>
+  <LI><BUTTON class="buttonAddRemove" id="buttonRemove">Remove 
+Last</BUTTON></LI></UL></NAV>
+<P id="errorMessage"></P>
+<UL class="noteList" id="noteList">
+  <LI class="noteEmpty"><SPAN>(音を追加するには「Add」をクリックしてください)</SPAN><INPUT id="noteItemLastValues" type="hidden"><INPUT id="noteItemCurrentCount" type="hidden" value="1"></LI>
+  <LI class="noteItem">
+  <UL>
+    <LI class="noteItemHeader">音:</LI>
+    <LI class="noteItemForm"><INPUT class="noteItemValue" type="number" value="440"><SPAN 
+    class="hzSuffix"> Hz</SPAN></LI>
+    <LI class="noteFunctionForm"><INPUT class="noteFunction" type="text" list="waveFunctions" value="square"></LI>
+    <LI class="notePlayButtonContainer"><BUTTON 
+    class="notePlaySingle">Play</BUTTON> <BUTTON 
+    class="noteRemove">Remove</BUTTON></LI></UL></LI></UL>
+<DIV class="hzCalculator">
+<FORM class="hzCalculatorForm" action="javascript:void(0)">
+<UL>
+  <LI>Hz: <INPUT class="calc_value" type="number" value="440"></LI>
+  <LI>純正律: <SELECT class="calc_typeJust"><OPTION value="2">+2</OPTION>
+    		 <OPTION value="4">+4</OPTION>		 <OPTION value="5">+5</OPTION>		 <OPTION 
+    value="7">+7</OPTION>		 <OPTION value="9">+9</OPTION>		 <OPTION 
+    value="11">+11</OPTION>	 </SELECT> → <SPAN id="calc_justValue"></SPAN></LI>
+  <LI>平均律: <SELECT class="calc_typeEqual"><OPTION value="2">+2</OPTION>
+    		 <OPTION value="4">+4</OPTION>		 <OPTION value="5">+5</OPTION>		 <OPTION 
+    value="7">+7</OPTION>		 <OPTION value="9">+9</OPTION>		 <OPTION 
+    value="11">+11</OPTION>	 </SELECT> → <SPAN id="calc_equalValue"></SPAN></LI>
+  <LI>倍音: <SPAN id="calc_twiceNote"></SPAN></LI>
+  <LI>1.5倍音: <SPAN id="calc_halfTripleNote"></SPAN></LI>
+  <LI>3倍音: <SPAN id="calc_tripleNote"></SPAN></LI>
+  <LI>×2<SUP>1/12</SUP>: <SPAN id="calc_upperOne"></SPAN></LI>
+  <LI>×2<SUP>2/12</SUP>: <SPAN id="calc_upperTwo"></SPAN></LI>
+  <LI>×2<SUP>3/12</SUP>: <SPAN id="calc_upper3"></SPAN></LI>
+  <LI>×2<SUP>4/12</SUP>: <SPAN id="calc_upper4"></SPAN></LI>
+  <LI>×2<SUP>-1/12</SUP>: <SPAN id="calc_lowerOne"></SPAN></LI>
+  <LI>×2<SUP>-2/12</SUP>: <SPAN id="calc_lowerTwo"></SPAN></LI></UL></FORM></DIV>
+<SCRIPT>preInitialize();</SCRIPT>
+ 
+<H3>使い方</H3>
+<UL>
+  <LI>「音」の横の入力欄に周波数(Hz)を入力し、その行にある「Play」をクリックすると、入力した周波数に対応する音を再生します。	 
+  <UL>
+    <LI>音は1音あたり2秒程度再生されます。再生中の音に対して「Play」をクリックすると再生を停止する一方、再生中に別の音に対して「Play」をクリックすると重ねて音が再生されます。</LI>
+    <LI>音の再生に「Web Audio API」を利用しているため、非対応のブラウザーでは利用できません。</LI></UL></LI>
+  <LI>枠上部の「Add」ボタンをクリックすると入力欄を追加できます。その横の「Play 
+  All」をクリックすることで、追加された入力欄に設定された音をすべて同時に再生します(和音となります)。</LI>
+  <LI>周波数(Hz)の横にある入力欄は関数(波形)を指定します。「sine」(サイン波)、「square」(矩形波)、「triangle」(三角波)、「sawtooth」(のこぎり波・鋸歯状波)をそれぞれ指定できます。
+	 
+  <UL>
+    <LI>また、「value」(または val, v) を0以上1未満の入力とした数式も指定可能です。数式の場合は計算結果が -1 から 1 
+    の間になるようにしてください(振幅の値として使用されます)。数式には「sin」と「cos」のほか、「toRad(x) = 2 * x * 
+    PI」という関数も使用できます。		 
+    <UL>
+      <LI>数式の例: <SPAN class="code">sin(toRad(value))</SPAN> 
+    (サイン波を指定)</LI></UL></LI></UL></LI></UL>
+<P class="lastUpdate">最終更新日時: 2017/01/29</P></DIV><FOOTER><NAV>
+<UL>
+  <LI><A href="https://www.pg-fl.jp/music/">戻る</A></LI>
+  <LI><A href="https://www.pg-fl.jp/">トップページ</A></LI>
+  <LI><A href="https://www.pg-fl.jp/about.htm">当サイトについて</A></LI>
+  <LI><A href="https://www.pg-fl.jp/pp.htm">プライバシーポリシー</A></LI></UL> </NAV> 
+<ADDRESS>Copyright © 2017 Kuri-Applications.</ADDRESS></FOOTER></BODY></HTML>
