@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d2e55ad-5002-4137-ad13-8ec967ec5871" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../example04/.idea/libraries/org_apache_commons_commons_math3_3_6_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example04/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../example04/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example04/src/pr2calc/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/../example04/src/pr2calc/Matrix.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +16,7 @@
     <session id="-832962398">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.opened" value="3" />
@@ -92,7 +92,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="833">
+                <state relative-caret-position="867">
                   <caret line="51" selection-start-line="5" selection-end-line="51" />
                 </state>
               </provider>
@@ -105,8 +105,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/pr2calc/Matrix.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="748">
-                  <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+                <state relative-caret-position="17">
+                  <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#Matrix#0;class#Matrix#0" />
@@ -246,12 +246,12 @@
       <workItem from="1540377839127" duration="50000" />
       <workItem from="1540377912833" duration="8899000" />
       <workItem from="1540950411898" duration="5657000" />
-      <workItem from="1540969585522" duration="2116000" />
+      <workItem from="1540969585522" duration="2310000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16722000" />
+    <option name="totallyTimeSpent" value="16916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -304,10 +304,17 @@
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar!/META-INF/LICENSE.txt" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1-sources.jar!/org/apache/commons/math3/linear/MatrixUtils.java" />
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" selection-start-line="5" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pr2calc/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+        <state relative-caret-position="17">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Matrix#0;class#Matrix#0" />
@@ -315,13 +322,6 @@
             <element signature="method#display#0;class#Matrix#0" />
             <element signature="method#getInnerProduct#0;class#Matrix#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="51" selection-start-line="5" selection-end-line="51" />
         </state>
       </provider>
     </entry>
