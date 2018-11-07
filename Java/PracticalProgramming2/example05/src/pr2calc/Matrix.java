@@ -28,7 +28,7 @@ public class Matrix {
             System.out.print("[");
             for (int j = 0; j < this.m.getColumnDimension(); j++) {
                 System.out.print(this.m.getEntry(i, j));
-                if (j < this.m.getColumnDimension() - 1) System.out.print(",");
+                if (j < this.m.getColumnDimension() - 1) System.out.print(",\t");
             }
             System.out.println("]");
         }
