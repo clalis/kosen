@@ -1,21 +1,0 @@
-Determining if the C compiler works failed with the following output:
-Change Dir: C:/Users/s_cla/ドキュメント/repos/kosen/C++/DSP/dsp1-7/dsp1-7/cmake-build-debug/CMakeFiles/CMakeTmp
-
-Run Build Command:"nmake" "/nologo" "cmTC_4105c\fast"
-	"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_4105c.dir\build.make /nologo -L                  CMakeFiles\cmTC_4105c.dir\build
-Building C object CMakeFiles/cmTC_4105c.dir/testCCompiler.c.obj
-	C:\PROGRA~2\MICROS~1\2017\COMMUN~1\VC\Tools\MSVC\1415~1.267\bin\Hostx86\x86\cl.exe @C:\Users\s_cla\AppData\Local\Temp\nmCC9C.tmp
-testCCompiler.c
-Linking C executable cmTC_4105c.exe
-	"C:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_4105c.dir --manifests  -- C:\PROGRA~2\MICROS~1\2017\COMMUN~1\VC\Tools\MSVC\1415~1.267\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_4105c.dir\objects1.rsp @C:\Users\s_cla\AppData\Local\Temp\nmCD39.tmp
-RC Pass 1: command "rc /foCMakeFiles\cmTC_4105c.dir/manifest.res CMakeFiles\cmTC_4105c.dir/manifest.rc" failed (exit code 1) with the following output:
-Microsoft (R) Windows (R) Resource Compiler Version 10.0.10011.16384
-Copyright (C) Microsoft Corporation.  All rights reserved.
-
-
-CMakeFiles\cmTC_4105c.dir/manifest.rc(1) : error RC2135 : file not found: C:/Users/s_cla/NMAKE : fatal error U1077: '"C:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe"' : リターン コード '0xffffffff'
-Stop.
-NMAKE : fatal error U1077: '"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\nmake.exe"' : リターン コード '0x2'
-Stop.
-
-
