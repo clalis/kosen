@@ -5,6 +5,7 @@
 #ifndef PCH_H
 #define PCH_H
 
+#include <complex>
 #include <cstdlib>
 #include <fstream>
 #include <iostream>

@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5078a2af-f368-4b3c-b212-b5833a7a4cf3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../example06/.idea/libraries/org_apache_commons_commons_math3_3_6_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C++/DSP/dsp1-7/dsp1-7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../C++/DSP/dsp1-7/dsp1-7/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C++/DSP/dsp1-7/dsp1-7/cmake-build-debug/CMakeFiles/dsp1_7.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../C++/DSP/dsp1-7/dsp1-7/cmake-build-debug/CMakeFiles/dsp1_7.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C++/DSP/dsp1-7/dsp1-7/cmake-build-debug/CMakeFiles/dsp1_7.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../../../C++/DSP/dsp1-7/dsp1-7/cmake-build-debug/CMakeFiles/dsp1_7.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C++/DSP/dsp1-7/dsp1-7/cmake-build-debug/CMakeFiles/dsp1_7.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../../C++/DSP/dsp1-7/dsp1-7/cmake-build-debug/CMakeFiles/dsp1_7.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C++/DSP/dsp1-7/dsp1-7/cmake-build-debug/CMakeFiles/dsp1_7.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../C++/DSP/dsp1-7/dsp1-7/cmake-build-debug/CMakeFiles/dsp1_7.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C++/DSP/dsp1-7/dsp1-7/cmake-build-debug/CMakeFiles/dsp1_7.dir/vc140.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../C++/DSP/dsp1-7/dsp1-7/cmake-build-debug/CMakeFiles/dsp1_7.dir/vc140.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C++/DSP/dsp1-7/dsp1-7/cmake-build-debug/dsp1_7.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../../C++/DSP/dsp1-7/dsp1-7/cmake-build-debug/dsp1_7.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C++/DSP/dsp1-7/dsp1-7/cmake-build-debug/dsp1_7.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../../../C++/DSP/dsp1-7/dsp1-7/cmake-build-debug/dsp1_7.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C++/DSP/dsp1-7/dsp1-7/cmake-build-debug/dsp1_7.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../C++/DSP/dsp1-7/dsp1-7/cmake-build-debug/dsp1_7.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C++/DSP/dsp1-7/dsp1-7/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../C++/DSP/dsp1-7/dsp1-7/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../C++/DSP/dsp1-7/dsp1-7/pch.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../C++/DSP/dsp1-7/dsp1-7/pch.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/example05/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/example05/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/example05/pr2calc/Matrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/example05/pr2calc/Matrix.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pr2calc/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pr2calc/Matrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pr2calc/SimultaneousEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pr2calc/SimultaneousEquation.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +27,13 @@
     <session id="-1657360687">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -58,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-337">
-              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="102">
+              <caret line="37" column="21" selection-end-line="124" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,7 +79,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pr2calc/Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
+            <state relative-caret-position="391">
               <caret line="30" column="78" selection-start-line="30" selection-start-column="78" selection-end-line="30" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -91,7 +100,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pr2calc/SimultaneousEquation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
+            <state relative-caret-position="901">
               <caret line="53" column="38" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -282,6 +291,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -304,7 +314,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -314,7 +323,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541574427776" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541991390534" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -363,16 +372,18 @@
       <workItem from="1541389701230" duration="2495000" />
       <workItem from="1541392873121" duration="1586000" />
       <workItem from="1541396977309" duration="19950000" />
+      <workItem from="1541990345015" duration="641000" />
+      <workItem from="1541991176929" duration="224000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24031000" />
+    <option name="totallyTimeSpent" value="24896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23154363" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23825504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -411,9 +422,19 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/pr2calc/Simulatanous.java" />
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="37" column="21" selection-end-line="124" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pr2calc/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
+        <state relative-caret-position="391">
           <caret line="30" column="78" selection-start-line="30" selection-start-column="78" selection-end-line="30" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -432,18 +453,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pr2calc/SimultaneousEquation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
+        <state relative-caret-position="901">
           <caret line="53" column="38" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-337">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
