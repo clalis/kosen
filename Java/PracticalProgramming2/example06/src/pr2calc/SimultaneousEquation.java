@@ -35,7 +35,7 @@ public class SimultaneousEquation extends Matrix {
         RealVector fromVector = this.matrix.getRowVector(from);
         RealVector toVector = this.matrix.getRowVector(to);
 
-        this.matrix.setRowVector(to, toVector.subtract(fromVector.mapMultiply(toVector.getEntry(from))));
+        this.matrix.setRowVector(to, toVector.subtract(fromVector.mapMultiply(toVector.getEntry(from) / fromVector.getEntry(from))));
     }
 
     public void solveByGaussJordan() {
@@ -51,6 +51,30 @@ public class SimultaneousEquation extends Matrix {
         }
 
         answers = this.matrix.getColumn(this.matrix.getColumnDimension() - 1);
+        for (double answer : answers) System.out.print(new StringBuilder().append(answer).append("\t").toString());
+        System.out.println();
+    }
+
+    public void solveByGauss() {
+        int rowDimension = this.matrix.getRowDimension();
+        int colDimension = this.matrix.getColumnDimension();
+        answers = new double[rowDimension];
+
+        for (int i = 0; i < rowDimension; i++) {
+            for (int j = i; j < rowDimension; j++) {
+                if (i == j) continue;
+                this.subtractRowFrom(i, j);
+            }
+            this.display();
+        }
+
+        answers[rowDimension - 1] = this.matrix.getEntry(rowDimension - 1, colDimension - 1) / this.matrix.getEntry(rowDimension - 1, colDimension - 2);
+        for (int i = rowDimension - 2; i >= 0; --i) {
+            double vd = 0.0d;
+            for (int j = i + 1; j < rowDimension; ++j) vd += this.matrix.getEntry(i, j) * answers[j];
+            answers[i] = (this.matrix.getEntry(i, colDimension - 1) - vd) / this.matrix.getEntry(i, i);
+        }
+
         for (double answer : answers) System.out.print(new StringBuilder().append(answer).append("\t").toString());
         System.out.println();
     }

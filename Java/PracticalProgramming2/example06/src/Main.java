@@ -65,7 +65,7 @@ public class Main {
 
 //        pp2_ex5
         sMat0.display();
-        sMat0.solveByGaussJordan();
+        sMat0.solveByGauss();
     }
 }
 
