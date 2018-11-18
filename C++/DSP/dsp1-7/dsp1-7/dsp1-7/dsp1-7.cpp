@@ -107,8 +107,103 @@ void Calc::executeIDFT()
 	pf.close();
 }
 
-int main()
+class fft
 {
+private:
+	complex<long double> w[512];
+	long	br[512];
+	long n;
+	long double step;
+	long double pi;
+	void butterfly(complex<long double> a, complex<long double> b, complex<long double> out[], long k);
+	complex<long double> multiplication(complex<long double> a, complex<long double> b);
+
+public:
+	fft(long num);
+	void difFFT(complex<long double> x[]);
+};
+
+fft::fft(long num)
+{
+	n = num;
+	pi = acos(-1.0);
+	long double omega = -2.0 * pi / (long double)n;	// 回転子の設定
+
+	for (long i = 0; i < n; i++)w[i] = complex<long double>(cos(omega * (long double)i), sin(omega * (long double)i));	// 回転子の設定
+
+	step = log((long double)n) / log(2.0);			// 総バタフライ区間数
+
+	br[0] = 0;										// ビット反転
+	long roop1 = 1;
+	for (long i = 0; i < step; i++)
+	{
+		for (long j = 0; j < roop1; j++)	br[roop1 + j] = br[j] + n / (2 * roop1);
+		roop1 *= 2;
+	}
+}
+
+void fft::difFFT(complex<long double> x[])
+{
+	complex<long double> out[2];							// 一時記憶メモリ
+	long roop2 = n / 2;
+	long roop = 1;
+	for (long i = 0; i < step; i++)			// 第i番目のバタフライ区間
+	{
+		long bias = 0;
+		for (long j = 0; j < roop; j++)
+		{
+			for (long k = 0; k < roop2; k++)
+			{
+				long num = bias + k;		// バタフライ演算対象信号の選択
+				long num2 = num + roop2;	// バタフライ演算対象信号の選択
+				butterfly(x[num], x[num2], out, k*roop);
+				x[num] = out[0];			// インプレイス
+				x[num2] = out[1];			// インプレイス
+			}
+			bias += 2 * roop2;
+		}
+		roop2 /= 2;
+		roop *= 2;
+	}
+
+	complex<long double> buffer;							// ベクトルの要素の入れ替え
+	for (long i = 0; i < n; i++)
+	{
+		if (br[i] > i)
+		{
+			buffer = x[br[i]];
+			x[br[i]] = x[i];
+			x[i] = buffer;
+		}
+	}
+}
+
+void fft::butterfly(complex<long double> a, complex<long double> b, complex<long double> out[], long k)
+{
+	complex<long double> d;
+	out[0] = complex<long double>(a.real() + b.real(), a.imag() + b.imag());
+
+	d = complex<long double>(a.real() - b.real(), a.imag() - b.imag());
+
+	out[1] = multiplication(d, w[k]);			// 複素数の積
+}
+
+complex<long double> fft::multiplication(complex<long double> a, complex<long double> b)
+{
+	complex<long double> c;									// 変数 c を 64 ビットの複素数型で宣言
+
+	c = complex<long double>(a.real() * b.real() - a.imag() * b.imag(), a.real() * b.imag() + a.imag() * b.real());	// 複素数 a と b の乗算 
+
+	return c;	// c を返す。
+}
+
+long main(long argc, char* argv[])
+{
+	long n;
+	long double ts;
+	complex<long double> sf[16384] = { 0.0 };		// 配列 sf[4] を 64 ビットの複素数型で宣言して，"0" に初期化
+	char buf[512];
+
 	cout << "DSP1-7 4J23 H.Shiina" << endl;
 	cout << "After emitted \"data.txt\", u can get \"one_sec.wav\"." << endl;
 
@@ -146,10 +241,44 @@ int main()
 		objCalc.makeSourceData();
 
 		// 離散フーリエ変換
-		objCalc.executeDFT();
+		// objCalc.executeDFT();
 
 		// 逆離散フーリエ変換
-		objCalc.executeIDFT();
+		// objCalc.executeIDFT();
+	}
+	catch (...)
+	{
+		cout << "Caught exception." << endl;
+		return EXIT_FAILURE;
+	}
+
+	long double pi = acos(-1.0);	// 円周率の算出
+	printf(" Ts [second] = ");		// サンプリング周期の入力
+	fgets(buf, sizeof(buf), stdin);
+	sscanf(buf, "%lf", &ts);
+	printf(" N = ");				// 分割数の入力
+	fgets(buf, sizeof(buf), stdin);
+	sscanf(buf, "%d", &n);
+
+	try
+	{
+		cout << "starting fft..." << endl;
+		fft ft(n);
+
+		long double f0 = 1.0 / ((long double)n * ts);													// 基本周波数の計算
+
+		for (long i = 0; i < n; i++)	sf[i] = complex<long double>(1.0 + sin(2.0 * pi * 250.0 * (long double)i * ts));	// 離散時間信号
+
+		ft.difFFT(sf);
+
+		printf("\n");
+		printf("f [Hz] FR(kf0) FI(kf0) |F(kf0)|\n");
+		for (long i = 0; i < n; i++)
+		{
+			long double spt = sqrt(sf[i].real() * sf[i].real() + sf[i].imag() * sf[i].imag());
+			printf("%6.1f%8.2f%8.2f%9.2f\n", f0 * (long double)i, sf[i].real(), sf[i].imag(), spt);	// 結果表示
+		}
+		cout << "finished fft..." << endl;
 	}
 	catch (...)
 	{
