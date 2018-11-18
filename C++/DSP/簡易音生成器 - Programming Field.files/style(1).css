@@ -1,0 +1,222 @@
+body {
+	color: rgb(0, 0, 0); background-color: rgb(250, 235, 215);
+}
+.note {
+	clear: both;
+}
+div.fig {
+	margin: 1em; padding: 0px; border: 1px solid rgb(192, 192, 192); float: right; background-color: rgb(240, 240, 240);
+}
+div.fig p {
+	margin: 0.25em; padding: 0.25em;
+}
+.hasFigContent#content section {
+	clear: both;
+}
+.chordSearchResult {
+	border-width: 1px; border-style: inset; padding: 0.5rem; background-color: rgb(254, 254, 254);
+}
+.chordRootChangerPlaceholder {
+	width: 100%; display: none;
+}
+.fixedBarParent {
+	padding: 0.5em 1em; width: 100%; display: block; box-sizing: border-box; background-color: rgb(250, 235, 215);
+}
+.fixedBarParent > p {
+	margin: 0px;
+}
+ul.musicList {
+	font-size: 0.9em;
+}
+ul.musicList li {
+	font-weight: bold;
+}
+ul.musicList li ul {
+	padding-left: 0px;
+}
+ul.musicList li ul li {
+	font-weight: normal; list-style-type: none;
+}
+dl.data_list dt {
+	font-weight: bold;
+}
+@media all and (min-width:800px)
+{
+table.chordList {
+	border-width: 1px; border-style: solid; color: rgb(0, 0, 0); border-collapse: collapse; background-color: rgb(250, 250, 250);
+}
+table.chordList th {
+	padding: 4px;
+}
+table.chordList td {
+	padding: 4px;
+}
+table.chordList th {
+	text-align: center; color: rgb(0, 0, 0); white-space: nowrap; background-color: rgb(224, 224, 224);
+}
+table.chordList td {
+	text-align: left; vertical-align: middle; border-top-width: 1px; border-top-style: solid;
+}
+table.chordList td.name {
+	text-align: center; font-weight: bold; white-space: nowrap;
+}
+table.chordList td.alternative {
+	text-align: center; white-space: nowrap;
+}
+table.chordList td.composition {
+	padding-right: 4px; padding-left: 4px; white-space: nowrap;
+}
+table.chordList td.composition2 {
+	padding-right: 4px; padding-left: 4px;
+}
+table.chordList td.sample {
+	white-space: nowrap;
+}
+table.chordList td.description {
+	vertical-align: top;
+}
+table.chordList td.description2 {
+	vertical-align: top; border-top-style: none;
+}
+}
+@media all and (max-width:799px)
+{
+table.chordList {
+	padding: 1em; display: block;
+}
+table.chordList thead {
+	display: none;
+}
+table.chordList tbody {
+	display: block;
+}
+table.chordList tr {
+	display: block;
+}
+table.chordList tr {
+	margin: 0px; padding: 0px; color: rgb(102, 102, 102);
+}
+table.chordList tr:not(:first-child).declChord {
+	margin-top: 1em;
+}
+table.chordList tr.declChord::first-line {
+	color: rgb(144, 48, 255);
+}
+table.chordList td {
+	margin: 0px; padding: 0px; text-align: left !important; font-size: 0.9em; vertical-align: baseline; display: inline-block;
+}
+table.chordList td br {
+	display: none;
+}
+table.chordList td.name {
+	font-size: 1.25em; display: inline;
+}
+table.chordList tr:not(:first-child) td.name {
+	
+}
+table.chordList td.alternative {
+	font-size: 0.9em; font-style: italic; display: inline;
+}
+table.chordList td:not(:empty).alternative::before {
+	content: "別表記: ";
+}
+table.chordList td.alternative span:not(:last-child).altName::after {
+	content: ", ";
+}
+table.chordList td.alternative::after {
+	width: 100%; display: block; content: " ";
+}
+table.chordList td.composition::before {
+	content: "構成音: ";
+}
+table.chordList td.composition span:not(:last-child).compNote::after {
+	content: ", ";
+}
+table.chordList td.call {
+	
+}
+table.chordList td.call::before {
+	content: "読み: ";
+}
+table.chordList td.call span:not(:first-child).calls::before {
+	content: ", ";
+}
+table.chordList td.call span.callsSub {
+	font-size: 0.8em;
+}
+table.chordList td.sample {
+	
+}
+table.chordList td.sample::before {
+	content: "表記例: ";
+}
+table.chordList td.sample span:not(:first-child).samples::before {
+	content: ", ";
+}
+table.chordList td.description {
+	color: rgb(0, 0, 0); font-size: 1em; display: block;
+}
+table.chordList td.description2 {
+	color: rgb(0, 0, 0); font-size: 1em; display: block;
+}
+}
+table.valueTable {
+	border: 1px solid rgb(0, 0, 0); color: rgb(0, 0, 0); border-collapse: collapse; background-color: rgb(255, 255, 255);
+}
+table.valueTable tr th {
+	padding: 3px; border: 1px solid rgb(0, 0, 0);
+}
+table.valueTable tr td {
+	padding: 3px; border: 1px solid rgb(0, 0, 0);
+}
+table.valueTable tr th {
+	text-align: center; font-weight: bold; background-color: rgb(224, 224, 224);
+}
+table.param_table {
+	color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);
+}
+table.param_table .header {
+	text-align: center; font-weight: bold; background-color: rgb(224, 224, 224);
+}
+table.param_table .param_name {
+	text-align: left; font-weight: bold; vertical-align: top;
+}
+div.chordForSignTableParent {
+	
+}
+div.chordForSignTableForm {
+	
+}
+div.chordForSignTableList {
+	
+}
+table.chordForSignTable {
+	border: 1px solid rgb(0, 0, 0); color: rgb(0, 0, 0); border-collapse: collapse; background-color: rgb(255, 255, 255);
+}
+table.chordForSignTable tr th {
+	padding: 3px; border: 1px solid rgb(0, 0, 0); text-align: left; vertical-align: top;
+}
+table.chordForSignTable tr td {
+	padding: 3px; border: 1px solid rgb(0, 0, 0); text-align: left; vertical-align: top;
+}
+table.chordForSignTable {
+	color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);
+}
+table.chordForSignTable caption {
+	border-width: 1px; border-style: solid solid none; border-color: rgb(0, 0, 0); text-align: center; color: rgb(0, 0, 0); font-weight: bold; background-color: rgb(255, 255, 128);
+}
+table.chordForSignTable th {
+	text-align: center; font-weight: bold; background-color: rgb(224, 224, 224);
+}
+dl.chord_sample {
+	background: none; padding: 0px;
+}
+dl.chord_sample dt {
+	margin: 0.25em 0px; padding: 0.12em 0.5em; background-color: rgb(192, 255, 112);
+}
+dl.chord_sample dd {
+	margin: 0em 0.5em; padding: 0.12em; font-size: 0.9em; background-color: rgb(224, 224, 224);
+}
+dl.chord_sample dd + dd {
+	padding-top: 0.5em;
+}

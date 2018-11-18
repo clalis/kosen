@@ -1,0 +1,519 @@
+body {
+	border-color: rgb(255, 204, 17); margin: 0px 0px 1rem; color: rgb(34, 34, 51); line-height: 140%; letter-spacing: 0.03em; font-size: 0.95em; background-color: rgb(224, 255, 192);
+}
+p {
+	margin-right: 1rem; margin-left: 1rem;
+}
+table {
+	margin-right: 1rem; margin-left: 1rem;
+}
+div.normal {
+	margin-right: 1rem; margin-left: 1rem;
+}
+div.code {
+	margin-right: 1rem; margin-left: 1rem;
+}
+div.code_ja {
+	margin-right: 1rem; margin-left: 1rem;
+}
+pre {
+	margin-right: 1rem; margin-left: 1rem;
+}
+ul {
+	padding-left: 1em; margin-right: 1rem; margin-left: 1rem;
+}
+dl {
+	padding-left: 1em; margin-right: 1rem; margin-left: 1rem;
+}
+body > table {
+	margin: 1rem;
+}
+main > table {
+	margin: 1rem;
+}
+section > table {
+	margin: 1rem;
+}
+.ads {
+	margin-right: 1rem; margin-left: 1rem;
+}
+.ads .ads_header {
+	padding: 0px; text-align: center; color: rgb(136, 0, 204); font-size: 90%; margin-bottom: 0.12rem;
+}
+.ads_middle + section {
+	margin-top: 1rem;
+}
+#Header {
+	padding: 4px 0.5em; background-color: rgb(248, 248, 248);
+}
+.footer {
+	border-color: rgb(0, 0, 128); clear: both; margin-top: 1rem; border-top-width: 1px; border-top-style: solid;
+}
+footer {
+	border-color: rgb(0, 0, 128); clear: both; margin-top: 1rem; border-top-width: 1px; border-top-style: solid;
+}
+header nav {
+	display: block;
+}
+header nav ul {
+	margin: 0px; padding: 0px 0px 0px 10px; vertical-align: middle; display: inline-block;
+}
+header nav ul li {
+	margin: 0px; padding: 0px; vertical-align: middle; display: inline-block; list-style-type: none;
+}
+header nav ul li * {
+	padding: 4px 8px 4px 18px; border-radius: 0px 16px 16px 0px / 0px 1em 1em 0px; transition:background-color 0.125s linear; margin-left: -18px; vertical-align: middle; display: inline-block; position: relative;
+}
+header nav ul li.thisPage * {
+	border-radius: 0px; padding-left: 0px; margin-left: 0px; background-color: inherit;
+}
+header nav ul li:first-child.thisPage {
+	padding: 4px 0px 4px 18px; margin-left: -18px;
+}
+header nav ul li:nth-last-of-type(7) * {
+	z-index: 106; background-color: rgb(112, 176, 224);
+}
+header nav ul li:nth-last-of-type(6) * {
+	z-index: 105; background-color: rgb(128, 192, 232);
+}
+header nav ul li:nth-last-of-type(5) * {
+	z-index: 104; background-color: rgb(144, 208, 240);
+}
+header nav ul li:nth-last-of-type(4) * {
+	z-index: 103; background-color: rgb(160, 224, 255);
+}
+header nav ul li:nth-last-of-type(3) * {
+	z-index: 102; background-color: rgb(184, 232, 255);
+}
+header nav ul li:nth-last-of-type(2) * {
+	z-index: 101; background-color: rgb(208, 240, 255);
+}
+header nav ul li *:hover {
+	background-color: rgb(255, 255, 128) !important;
+}
+header nav ul::before {
+	background-color: rgb(224, 255, 224);
+}
+header nav ul li:first-child:not(.thisPage) * {
+	background-color: rgb(224, 255, 224);
+}
+header nav ul li.thisPage {
+	background-color: rgb(240, 248, 255);
+}
+header nav {
+	background-color: rgb(240, 248, 255);
+}
+header nav ul:not(.expanded) li.collapsed {
+	display: none;
+}
+header nav ul li.expand a::before {
+	width: 0.25em; display: inline-block; content: " ";
+}
+header nav ul li.expand a::after {
+	width: 0.25em; display: inline-block; content: " ";
+}
+header nav ul.expanded li.expand {
+	display: none;
+}
+footer {
+	padding: 0.75em; display: block;
+}
+footer * {
+	margin: 0px;
+}
+footer address {
+	vertical-align: top; float: right; display: inline-block;
+}
+footer nav {
+	vertical-align: top; display: inline-block;
+}
+footer nav ul {
+	margin: 0px; padding: 0px; font-size: 0px; display: inline;
+}
+footer nav ul li {
+	margin: 0px; display: inline-block; list-style-type: none;
+}
+footer nav ul li::before {
+	
+}
+footer nav ul li::after {
+	padding: 0px 0.37em; content: "|";
+}
+footer nav ul li:last-child::after {
+	padding: 0px; content: "";
+}
+h1 {
+	border-width: 1px; border-color: rgb(0, 0, 128); padding: 0.37em 0.75em; font-size: 1.25em; font-style: italic; border-top-style: solid; background-color: rgb(224, 255, 224);
+}
+header h1 {
+	margin: 0px;
+}
+h1:first-child {
+	border-top-style: none; border-bottom-style: solid;
+}
+h1 a {
+	margin: -0.35em -0.5em; padding: 0.35em 0.5em; color: inherit; display: inline-block;
+}
+h2 {
+	border-color: rgb(0, 0, 128); padding: 0.25em 0.25em 0.25em 0.37em; color: rgb(0, 0, 0); clear: both; border-top-width: 1px; border-top-style: solid; background-color: rgb(224, 255, 255);
+}
+h3 {
+	border-color: rgb(0, 0, 128); padding: 0.25em 0.25em 0.25em 0.37em; color: rgb(0, 0, 0); clear: both; border-top-width: 1px; border-top-style: solid; background-color: rgb(224, 255, 255);
+}
+h2:first-child {
+	margin-top: 0px;
+}
+h3:first-child {
+	margin-top: 0px;
+}
+h2 + h3 {
+	margin-top: 0px;
+}
+h4 {
+	padding: 0.25em 0.25em 0.25em 0.37em; color: rgb(0, 0, 0); margin-right: 1rem; margin-left: 1rem; border-left-color: rgb(0, 0, 128); border-left-width: 0.5em; border-left-style: solid; background-color: rgb(224, 255, 255);
+}
+h5 {
+	padding: 0.25em 0.25em 0.25em 0.37em; color: rgb(0, 0, 0); margin-right: 1rem; margin-left: 1rem; border-left-color: rgb(0, 0, 128); border-left-width: 0.5em; border-left-style: solid; background-color: rgb(224, 255, 255);
+}
+h6 {
+	padding: 0.25em 0.25em 0.25em 0.37em; color: rgb(0, 0, 0); margin-right: 1rem; margin-left: 1rem; border-left-color: rgb(0, 0, 128); border-left-width: 0.5em; border-left-style: solid; background-color: rgb(224, 255, 255);
+}
+h2 {
+	padding: 0.25em 0.5em; font-size: 1.5em;
+}
+div {
+	margin-right: 0px; margin-left: 0px;
+}
+section {
+	margin-right: 0px; margin-left: 0px;
+}
+.TopTitle {
+	text-align: center; color: rgb(0, 0, 0); line-height: 150%; font-size: x-large; font-style: italic;
+}
+h1.TopTitle {
+	background: none; padding: 0.5em 1em;
+}
+.tile-content {
+	vertical-align: top; display: inline-block;
+}
+@media all and (min-width:800px)
+{
+.tile-container {
+	padding: 0px 2em; text-align: center;
+}
+.tile-content {
+	width: 48%; text-align: left;
+}
+.tile-content h3 {
+	border-width: 1px; border-style: solid;
+}
+:last-child:nth-child(2n+1).tile-content {
+	width: 98%;
+}
+}
+@media all and (max-width:799px)
+{
+.tile-content {
+	display: block;
+}
+}
+.recent-changes {
+	width: 100%; height: 20em;
+}
+table.ReleaseTable {
+	border: 1px solid rgb(0, 0, 128); color: rgb(0, 0, 0); border-collapse: collapse; background-color: rgb(255, 255, 248);
+}
+table.ReleaseTable th {
+	padding: 5px; border: 1px solid rgb(0, 0, 128); line-height: 120%;
+}
+table.ReleaseTable td {
+	padding: 5px; border: 1px solid rgb(0, 0, 128); line-height: 120%;
+}
+table.ReleaseTable th {
+	text-align: left; color: rgb(0, 0, 0); font-weight: bold; background-color: rgb(255, 224, 160);
+}
+table.ReleaseTable .ReleaseDate {
+	vertical-align: top; white-space: nowrap;
+}
+@media all and (max-width:799px)
+{
+table.ReleaseTable th {
+	-ms-word-break: break-all;
+}
+table.ReleaseTable td {
+	-ms-word-break: break-all;
+}
+}
+a {
+	transition:color 0.125s linear; text-decoration: none;
+}
+a:hover {
+	color: rgb(64, 128, 255); text-decoration: underline;
+}
+.last_update {
+	font-size: 0.8em;
+}
+.caution {
+	color: red; font-weight: bold;
+}
+.note {
+	font-size: small; background-color: rgb(188, 224, 255);
+}
+.txtsp {
+	white-space: pre-wrap;
+}
+.txtspm {
+	font-family: monospace; white-space: pre-wrap;
+}
+dl {
+	padding: 0.5em; background-color: rgb(208, 255, 208);
+}
+dl dt {
+	margin: 0.5em 0px; padding: 0.25em 0.5em; background-color: rgb(255, 248, 240);
+}
+dl dt:first-child {
+	margin-top: 0px;
+}
+dl dd {
+	margin: 0px; padding: 0px;
+}
+dl dd table {
+	margin: 0.25em;
+}
+dl dd + dd {
+	margin-top: 0.5em;
+}
+dd dl {
+	padding-left: 0px; margin-left: 1em;
+}
+dl.linkList {
+	
+}
+dl.topLinkList {
+	margin: 0.75em 0.25em; background-color: rgb(248, 240, 192);
+}
+@media all and (min-width:800px)
+{
+dl.topLinkList {
+	
+}
+}
+dl.topLinkList dt {
+	padding: 0px; background-color: transparent;
+}
+dl.linkList dt {
+	padding: 0px; background-color: transparent;
+}
+dl.topLinkList dt a {
+	padding: 0.25em 0.5em; border-radius: 0.5em; transition:background-color 0.125s linear; display: block; background-color: rgb(255, 240, 224);
+}
+dl.linkList dt a {
+	padding: 0.25em 0.5em; border-radius: 0.5em; transition:background-color 0.125s linear; display: block; background-color: rgb(255, 240, 224);
+}
+dl.topLinkList dt a:hover {
+	background-color: rgb(255, 255, 255);
+}
+dl.linkList dt a:hover {
+	background-color: rgb(255, 255, 255);
+}
+dl.headlineContents {
+	background-color: rgb(240, 252, 255);
+}
+dl.headlineContents dt {
+	padding: 0px 0px 0.12em; margin-top: 1.75em; margin-bottom: 2px; border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+dl.headlineContents dt:first-child {
+	margin-top: 0px;
+}
+dl.headlineContents dt .date {
+	color: rgb(119, 119, 119); font-size: 75%;
+}
+dl.headlineContents dd {
+	padding: 0.12em 0px 0px;
+}
+dl.headlineContents dd .more {
+	
+}
+dl.headlineContents dd .more::before {
+	content: "[";
+}
+dl.headlineContents dd .more::after {
+	content: "]";
+}
+table {
+	border-color: rgb(64, 64, 64); border-collapse: collapse; background-color: rgb(255, 255, 255);
+}
+th {
+	border-color: rgb(64, 64, 64); padding: 0.25em 0.5em; background-color: rgb(224, 224, 224);
+}
+td {
+	border-color: rgb(64, 64, 64); padding: 0.25em 0.5em; background-color: rgb(250, 252, 240);
+}
+tbody td {
+	background-color: inherit;
+}
+table table {
+	margin: 0px;
+}
+ul.asterisk_list {
+	padding-left: 0px;
+}
+ul.asterisk_list li {
+	margin-left: 1.25em; list-style-type: none;
+}
+ul.asterisk_list li::before {
+	width: 1.25em; margin-left: -1.25em; display: inline-block; content: "*";
+}
+ul.asterisk_list li:lang(ja)::before {
+	content: "¦";
+}
+iframe {
+	
+}
+.code {
+	overflow: auto; font-family: monospace; -ms-word-break: break-all;
+}
+code {
+	overflow: auto; font-family: monospace; -ms-word-break: break-all;
+}
+div.code {
+	padding: 0.25em; color: rgb(32, 32, 32); line-height: 125%; font-size: small; display: block; -ms-word-break: normal; background-color: rgb(255, 255, 204);
+}
+pre.code {
+	padding: 0.25em; color: rgb(32, 32, 32); line-height: 125%; font-size: small; display: block; -ms-word-break: normal; background-color: rgb(255, 255, 204);
+}
+pre > code {
+	padding: 0.25em; color: rgb(32, 32, 32); line-height: 125%; font-size: small; display: block; -ms-word-break: normal; background-color: rgb(255, 255, 204);
+}
+.pg_key {
+	color: rgb(0, 0, 255);
+}
+.pg_dir {
+	color: rgb(0, 0, 255);
+}
+.pg_cmt {
+	color: rgb(0, 128, 0);
+}
+.pg_str {
+	color: rgb(163, 21, 21);
+}
+.pg_regex {
+	color: rgb(128, 0, 0);
+}
+.pg_op {
+	color: rgb(0, 0, 0);
+}
+.pg_op_u {
+	color: rgb(0, 136, 136);
+}
+.pg_type {
+	color: rgb(43, 145, 175);
+}
+.pg_param {
+	color: rgb(119, 119, 119);
+}
+.pg_var {
+	color: rgb(0, 0, 0);
+}
+.lang_cpp .pg_macro {
+	color: rgb(111, 0, 138);
+}
+.language-cpp .pg_macro {
+	color: rgb(111, 0, 138);
+}
+.lang_cpp .pg_enum {
+	color: rgb(47, 79, 79);
+}
+.language-cpp .pg_enum {
+	color: rgb(47, 79, 79);
+}
+.lang_xml .pg_attr {
+	color: rgb(255, 0, 0);
+}
+.language-xml .pg_attr {
+	color: rgb(255, 0, 0);
+}
+.lang_xml .pg_op {
+	color: rgb(0, 0, 255);
+}
+.language-xml .pg_op {
+	color: rgb(0, 0, 255);
+}
+.lang_xml .pg_val {
+	color: rgb(0, 0, 255);
+}
+.language-xml .pg_val {
+	color: rgb(0, 0, 255);
+}
+.lang_xml .pg_entity {
+	color: rgb(255, 0, 0);
+}
+.language-xml .pg_entity {
+	color: rgb(255, 0, 0);
+}
+.lang_xml .pg_tag {
+	color: rgb(0, 0, 255);
+}
+.language-xml .pg_tag {
+	color: rgb(0, 0, 255);
+}
+.lang_bat .pg_cmd {
+	color: rgb(0, 0, 255);
+}
+.language-batch .pg_cmd {
+	color: rgb(0, 0, 255);
+}
+.lang_bat .pg_param {
+	color: rgb(0, 102, 51);
+}
+.language-batch .pg_param {
+	color: rgb(0, 102, 51);
+}
+.lang_bat .pg_var {
+	color: rgb(0, 119, 153);
+}
+.language-batch .pg_var {
+	color: rgb(0, 119, 153);
+}
+.lang_bat .pg_dev {
+	color: rgb(68, 119, 0);
+}
+.language-batch .pg_dev {
+	color: rgb(68, 119, 0);
+}
+.lang_ps1 .pg_cmd {
+	color: rgb(0, 0, 255);
+}
+.language-ps1 .pg_cmd {
+	color: rgb(0, 0, 255);
+}
+.lang_ps1 .pg_attr {
+	color: rgb(0, 191, 255);
+}
+.language-ps1 .pg_attr {
+	color: rgb(0, 191, 255);
+}
+.lang_ps1 .pg_op {
+	color: rgb(121, 121, 121);
+}
+.language-ps1 .pg_op {
+	color: rgb(121, 121, 121);
+}
+.lang_ps1 .pg_switch {
+	color: rgb(138, 43, 226);
+}
+.language-ps1 .pg_switch {
+	color: rgb(138, 43, 226);
+}
+.lang_ps1 .pg_param {
+	color: rgb(143, 117, 64);
+}
+.language-ps1 .pg_param {
+	color: rgb(143, 117, 64);
+}
+.lang_ps1 .pg_var {
+	color: rgb(175, 69, 0);
+}
+.language-ps1 .pg_var {
+	color: rgb(175, 69, 0);
+}

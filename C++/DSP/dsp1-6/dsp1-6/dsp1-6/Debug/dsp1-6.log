@@ -1,0 +1,5 @@
+﻿  dsp1-6.cpp
+c:\users\teamet\downloads\kosen\c\dsp\dsp1-6\dsp1-6\dsp1-6\dsp1-6.cpp(38): warning C4091: 'static ': 変数が何も宣言されていないときは、'SetRiffChunk' の左辺を無視します。
+c:\users\teamet\downloads\kosen\c\dsp\dsp1-6\dsp1-6\dsp1-6\dsp1-6.cpp(49): warning C4091: 'static ': 変数が何も宣言されていないときは、'SetFMTChunk' の左辺を無視します。
+c:\users\teamet\downloads\kosen\c\dsp\dsp1-6\dsp1-6\dsp1-6\dsp1-6.cpp(54): warning C4091: 'static ': 変数が何も宣言されていないときは、'SetDataChunk' の左辺を無視します。
+  dsp1-6.vcxproj -> C:\Users\TeamET\Downloads\kosen\C\DSP\dsp1-6\dsp1-6\Debug\dsp1-6.exe

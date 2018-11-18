@@ -1,0 +1,3 @@
+﻿  dsp1-7.cpp
+c:\users\s_cla\documents\repos\kosen\c++\dsp\dsp1-7\dsp1-7\dsp1-7\dsp1-7.cpp(201): warning C4326: 'main' の戻り値の型には、'int' を使用してください。'long' は使用できません
+  dsp1-7.vcxproj -> C:\Users\s_cla\Documents\repos\kosen\C++\DSP\dsp1-7\dsp1-7\Debug\dsp1-7.exe
