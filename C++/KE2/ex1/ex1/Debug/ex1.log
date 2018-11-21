@@ -1,2 +1,29 @@
 ﻿  ex1.cpp
+c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\ex1\ex1.cpp(112): warning C4244: '引数': '_Ty' から 'const _Ty' への変換です。データが失われる可能性があります。
+          with
+          [
+              _Ty=int
+          ]
+          and
+          [
+              _Ty=float
+          ]
+c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\ex1\ex1.cpp(113): warning C4244: '引数': '_Ty' から 'const _Ty' への変換です。データが失われる可能性があります。
+          with
+          [
+              _Ty=int
+          ]
+          and
+          [
+              _Ty=float
+          ]
+c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\ex1\ex1.cpp(116): warning C4244: '=': '_Ty' から '_Ty' への変換です。データが失われる可能性があります。
+          with
+          [
+              _Ty=double
+          ]
+          and
+          [
+              _Ty=float
+          ]
   ex1.vcxproj -> C:\Users\s_cla\Documents\repos\kosen\C++\KE2\ex1\Debug\ex1.exe
