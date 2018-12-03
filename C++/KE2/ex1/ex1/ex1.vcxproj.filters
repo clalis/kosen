@@ -27,4 +27,144 @@
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\kadai-1-data\c01.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c02.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c03.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c04.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c05.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c06.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c07.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c08.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c09.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c10.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c11.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c12.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c13.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c14.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c15.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c16.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c17.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c18.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c19.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c20.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c21.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c22.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c23.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c24.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c25.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c26.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c27.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c28.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c29.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c30.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c31.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c32.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c33.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c34.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c35.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c36.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c37.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c38.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c39.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c40.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c41.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c42.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c43.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c44.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c45.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+    <Text Include="..\..\kadai-1-data\c46.txt">
+      <Filter>リソース ファイル</Filter>
+    </Text>
+  </ItemGroup>
 </Project>

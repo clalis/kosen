@@ -162,6 +162,54 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\kadai-1-data\c01.txt" />
+    <Text Include="..\..\kadai-1-data\c02.txt" />
+    <Text Include="..\..\kadai-1-data\c03.txt" />
+    <Text Include="..\..\kadai-1-data\c04.txt" />
+    <Text Include="..\..\kadai-1-data\c05.txt" />
+    <Text Include="..\..\kadai-1-data\c06.txt" />
+    <Text Include="..\..\kadai-1-data\c07.txt" />
+    <Text Include="..\..\kadai-1-data\c08.txt" />
+    <Text Include="..\..\kadai-1-data\c09.txt" />
+    <Text Include="..\..\kadai-1-data\c10.txt" />
+    <Text Include="..\..\kadai-1-data\c11.txt" />
+    <Text Include="..\..\kadai-1-data\c12.txt" />
+    <Text Include="..\..\kadai-1-data\c13.txt" />
+    <Text Include="..\..\kadai-1-data\c14.txt" />
+    <Text Include="..\..\kadai-1-data\c15.txt" />
+    <Text Include="..\..\kadai-1-data\c16.txt" />
+    <Text Include="..\..\kadai-1-data\c17.txt" />
+    <Text Include="..\..\kadai-1-data\c18.txt" />
+    <Text Include="..\..\kadai-1-data\c19.txt" />
+    <Text Include="..\..\kadai-1-data\c20.txt" />
+    <Text Include="..\..\kadai-1-data\c21.txt" />
+    <Text Include="..\..\kadai-1-data\c22.txt" />
+    <Text Include="..\..\kadai-1-data\c23.txt" />
+    <Text Include="..\..\kadai-1-data\c24.txt" />
+    <Text Include="..\..\kadai-1-data\c25.txt" />
+    <Text Include="..\..\kadai-1-data\c26.txt" />
+    <Text Include="..\..\kadai-1-data\c27.txt" />
+    <Text Include="..\..\kadai-1-data\c28.txt" />
+    <Text Include="..\..\kadai-1-data\c29.txt" />
+    <Text Include="..\..\kadai-1-data\c30.txt" />
+    <Text Include="..\..\kadai-1-data\c31.txt" />
+    <Text Include="..\..\kadai-1-data\c32.txt" />
+    <Text Include="..\..\kadai-1-data\c33.txt" />
+    <Text Include="..\..\kadai-1-data\c34.txt" />
+    <Text Include="..\..\kadai-1-data\c35.txt" />
+    <Text Include="..\..\kadai-1-data\c36.txt" />
+    <Text Include="..\..\kadai-1-data\c37.txt" />
+    <Text Include="..\..\kadai-1-data\c38.txt" />
+    <Text Include="..\..\kadai-1-data\c39.txt" />
+    <Text Include="..\..\kadai-1-data\c40.txt" />
+    <Text Include="..\..\kadai-1-data\c41.txt" />
+    <Text Include="..\..\kadai-1-data\c42.txt" />
+    <Text Include="..\..\kadai-1-data\c43.txt" />
+    <Text Include="..\..\kadai-1-data\c44.txt" />
+    <Text Include="..\..\kadai-1-data\c45.txt" />
+    <Text Include="..\..\kadai-1-data\c46.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
