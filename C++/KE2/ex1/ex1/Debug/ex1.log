@@ -1,5 +1,5 @@
 ﻿  ex1.cpp
-c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\ex1\ex1.cpp(112): warning C4244: '引数': '_Ty' から 'const _Ty' への変換です。データが失われる可能性があります。
+c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\ex1\ex1.cpp(109): warning C4244: '引数': '_Ty' から 'const _Ty' への変換です。データが失われる可能性があります。
           with
           [
               _Ty=int
@@ -8,7 +8,7 @@ c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\ex1\ex1.cpp(112): warning C4244
           [
               _Ty=float
           ]
-c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\ex1\ex1.cpp(113): warning C4244: '引数': '_Ty' から 'const _Ty' への変換です。データが失われる可能性があります。
+c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\ex1\ex1.cpp(110): warning C4244: '引数': '_Ty' から 'const _Ty' への変換です。データが失われる可能性があります。
           with
           [
               _Ty=int
@@ -17,7 +17,7 @@ c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\ex1\ex1.cpp(113): warning C4244
           [
               _Ty=float
           ]
-c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\ex1\ex1.cpp(116): warning C4244: '=': '_Ty' から '_Ty' への変換です。データが失われる可能性があります。
+c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\ex1\ex1.cpp(113): warning C4244: '=': '_Ty' から '_Ty' への変換です。データが失われる可能性があります。
           with
           [
               _Ty=double
