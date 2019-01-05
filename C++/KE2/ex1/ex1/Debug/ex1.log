@@ -1,29 +1,23 @@
-﻿  ex1.cpp
-c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\ex1\ex1.cpp(112): warning C4244: '引数': '_Ty' から 'const _Ty' への変換です。データが失われる可能性があります。
-          with
-          [
-              _Ty=int
-          ]
-          and
-          [
-              _Ty=float
-          ]
-c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\ex1\ex1.cpp(113): warning C4244: '引数': '_Ty' から 'const _Ty' への変換です。データが失われる可能性があります。
-          with
-          [
-              _Ty=int
-          ]
-          and
-          [
-              _Ty=float
-          ]
-c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\ex1\ex1.cpp(116): warning C4244: '=': '_Ty' から '_Ty' への変換です。データが失われる可能性があります。
-          with
-          [
-              _Ty=double
-          ]
-          and
-          [
-              _Ty=float
-          ]
-  ex1.vcxproj -> C:\Users\s_cla\Documents\repos\kosen\C++\KE2\ex1\Debug\ex1.exe
+﻿  pch.cpp
+c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\packages\eigen.3.3.3\build\native\include\eigen\src\jacobi\jacobi.h(37): error C2143: 構文エラー: ';' が '<' の前にありません。
+  c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\packages\eigen.3.3.3\build\native\include\eigen\src\jacobi\jacobi.h(75): note: コンパイル対象の クラス テンプレート インスタンス化 'Eigen::JacobiRotation<Scalar>' のリファレンスを確認してください
+c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\packages\eigen.3.3.3\build\native\include\eigen\src\jacobi\jacobi.h(37): error C4430: 型指定子がありません - int と仮定しました。メモ: C++ は int を既定値としてサポートしていません
+c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\packages\eigen.3.3.3\build\native\include\eigen\src\jacobi\jacobi.h(37): error C2039: 'Real': '`global namespace'' のメンバーではありません。
+c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\packages\eigen.3.3.3\build\native\include\eigen\src\jacobi\jacobi.h(37): error C2238: ';' の前に無効なトークンがあります。
+c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\packages\eigen.3.3.3\build\native\include\eigen\src\jacobi\jacobi.h(65): error C4430: 型指定子がありません - int と仮定しました。メモ: C++ は int を既定値としてサポートしていません
+c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\packages\eigen.3.3.3\build\native\include\eigen\src\jacobi\jacobi.h(65): error C2988: 認識できないテンプレートの宣言または定義です。
+c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\packages\eigen.3.3.3\build\native\include\eigen\src\jacobi\jacobi.h(65): error C2143: 構文エラー: ',' が '<' の前にありません。
+c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\packages\eigen.3.3.3\build\native\include\eigen\src\jacobi\jacobi.h(66): error C4430: 型指定子がありません - int と仮定しました。メモ: C++ は int を既定値としてサポートしていません
+c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\packages\eigen.3.3.3\build\native\include\eigen\src\jacobi\jacobi.h(66): error C2143: 構文エラー: ',' が '&' の前にありません。
+c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\packages\eigen.3.3.3\build\native\include\eigen\src\jacobi\jacobi.h(71): error C2653: 'internal': 識別子がクラス名でも名前空間名でもありません。
+c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\packages\eigen.3.3.3\build\native\include\eigen\src\jacobi\jacobi.h(71): error C2061: 構文エラー: 識別子 'true_type'
+c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\packages\eigen.3.3.3\build\native\include\eigen\src\jacobi\jacobi.h(71): error C2535: 'void Eigen::JacobiRotation<Scalar>::makeGivens(const Scalar &,const Scalar &,Scalar *)': メンバー関数は、既に定義または宣言されています。
+  c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\packages\eigen.3.3.3\build\native\include\eigen\src\jacobi\jacobi.h(68): note: 'Eigen::JacobiRotation<Scalar>::makeGivens' の宣言を確認してください
+c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\packages\eigen.3.3.3\build\native\include\eigen\src\jacobi\jacobi.h(72): error C2653: 'internal': 識別子がクラス名でも名前空間名でもありません。
+c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\packages\eigen.3.3.3\build\native\include\eigen\src\jacobi\jacobi.h(72): error C2061: 構文エラー: 識別子 'false_type'
+c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\packages\eigen.3.3.3\build\native\include\eigen\src\jacobi\jacobi.h(72): error C2535: 'void Eigen::JacobiRotation<Scalar>::makeGivens(const Scalar &,const Scalar &,Scalar *)': メンバー関数は、既に定義または宣言されています。
+  c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\packages\eigen.3.3.3\build\native\include\eigen\src\jacobi\jacobi.h(68): note: 'Eigen::JacobiRotation<Scalar>::makeGivens' の宣言を確認してください
+c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\packages\eigen.3.3.3\build\native\include\eigen\src\jacobi\jacobi.h(54): fatal error C1903: 直前のエラーを修復できません。コンパイルを中止します。
+  'C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe' で内部コンパイラ エラーが発生しました。
+      Visual C++ のサポート情報 コマンドを選択してください
+      ヘルプ メニュー、またはサポート情報のヘルプ ファイルを参照してください

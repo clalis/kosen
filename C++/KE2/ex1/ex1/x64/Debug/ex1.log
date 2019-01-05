@@ -1,0 +1,31 @@
+﻿cl : コマンド ライン warning D9002: 不明なオプション '/arch:SSE2' を無視します。
+  ex1.cpp
+c1xx : warning C4199: 2 フェーズの名前参照は、C++/CLI、C++/CX、OpenMP ではサポートされていません。/Zc:twoPhase- を使用します
+c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\ex1\ex1.cpp(106): warning C4244: '引数': '_Ty' から 'const _Ty' への変換です。データが失われる可能性があります。
+          with
+          [
+              _Ty=int
+          ]
+          and
+          [
+              _Ty=float
+          ]
+c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\ex1\ex1.cpp(107): warning C4244: '引数': '_Ty' から 'const _Ty' への変換です。データが失われる可能性があります。
+          with
+          [
+              _Ty=int
+          ]
+          and
+          [
+              _Ty=float
+          ]
+c:\users\s_cla\documents\repos\kosen\c++\ke2\ex1\ex1\ex1.cpp(110): warning C4244: '=': '_Ty' から '_Ty' への変換です。データが失われる可能性があります。
+          with
+          [
+              _Ty=double
+          ]
+          and
+          [
+              _Ty=float
+          ]
+  ex1.vcxproj -> C:\Users\s_cla\Documents\repos\kosen\C++\KE2\ex1\x64\Debug\ex1.exe
