@@ -6,7 +6,7 @@ class Main {
     public static void main(String[] args) {
         NonlinearEquation eqn = new NonlinearEquation();
 
-        if (eqn._solveNLEByBisectionMethod(3.0, 0.0))
+        if (eqn._solveNLEByRegulaFalsi(5.0, 0.0))
             System.out.println("X = " + eqn.answer_ + " at iteration " + eqn.iteration_ + ".");
         else {
             System.out.println("Cannot solve NLE.");
@@ -15,22 +15,20 @@ class Main {
     }
 }
 
-
 /*
-"C:\Program Files\Java\jdk-11.0.1\bin\java.exe" -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:51636,suspend=y,server=n -javaagent:C:\Users\s_cla\.IntelliJIdea2018.2\system\captureAgent\debugger-agent.jar=file:/C:/Users/s_cla/AppData/Local/Temp/capture.props -Dfile.encoding=UTF-8 -classpath "C:\Users\s_cla\Documents\repos\kosen\Java\PracticalProgramming2\example08\out\production\example08;C:\Users\s_cla\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.5\lib\idea_rt.jar" Main
-        Connected to the target VM, address: '127.0.0.1:51636', transport: 'socket'
-        xMid = 1.5, f(xMid) = -0.21722891503668823, xPastMid = 0.0
-        xMid = 0.75, f(xMid) = -0.152416351664625, xPastMid = 1.5
-        xMid = 0.375, f(xMid) = -0.06853149997096943, xPastMid = 0.75
-        xMid = 0.1875, f(xMid) = -0.014397246516950494, xPastMid = 0.375
-        xMid = 0.09375, f(xMid) = 0.015458393324604481, xPastMid = 0.1875
-        xMid = 0.140625, f(xMid) = 3.0810855762221834E-4, xPastMid = 0.09375
-        xMid = 0.1640625, f(xMid) = -0.007100983511811885, xPastMid = 0.140625
-        xMid = 0.15234375, f(xMid) = -0.0034104431975624946, xPastMid = 0.1640625
-        xMid = 0.146484375, f(xMid) = -0.001554656346030668, xPastMid = 0.15234375
-        xMid = 0.1435546875, f(xMid) = -6.241445899367854E-4, xPastMid = 0.146484375
-        X = -6.241445899367854E-4 at iteration 10.
-        Disconnected from the target VM, address: '127.0.0.1:51636', transport: 'socket'
+"C:\Program Files\Java\jdk-11.0.1\bin\java.exe" -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:63245,suspend=y,server=n -javaagent:C:\Users\s_cla\.IntelliJIdea2018.3\system\captureAgent\debugger-agent.jar -Dfile.encoding=UTF-8 -classpath "C:\Users\s_cla\Documents\repos\kosen\Java\PracticalProgramming2\example10\out\production\example10;C:\Users\s_cla\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.5\lib\idea_rt.jar" Main
+        Connected to the target VM, address: '127.0.0.1:63245', transport: 'socket'
+        xMid = 4.737797636355764, f(xMid) = -0.09040917653742735, xPastMid = 0.0
+        xMid = 4.278145847776519, f(xMid) = -0.15993933175130398, xPastMid = 4.737797636355764
+        xMid = 3.594865701054022, f(xMid) = -0.21613299470460137, xPastMid = 4.278145847776519
+        xMid = 2.8602153928282474, f(xMid) = -0.1705471191102443, xPastMid = 3.594865701054022
+        xMid = 2.3782067277726964, f(xMid) = -0.0693895935643059, xPastMid = 2.8602153928282474
+        xMid = 2.197034326452006, f(xMid) = -0.017332711817567747, xPastMid = 2.3782067277726964
+        xMid = 2.1526929210955448, f(xMid) = -0.0035208121532872352, xPastMid = 2.197034326452006
+        xMid = 2.143723334140801, f(xMid) = -6.77756504755059E-4, xPastMid = 2.1526929210955448
+        xMid = 2.1419980778258125, f(xMid) = -1.2903388699502918E-4, xPastMid = 2.143723334140801
+        X = 2.1419980778258125 at iteration 9.
+        Disconnected from the target VM, address: '127.0.0.1:63245', transport: 'socket'
 
         Process finished with exit code 0
 */

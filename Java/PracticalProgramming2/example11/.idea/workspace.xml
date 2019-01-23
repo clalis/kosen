@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="000f51eb-4831-46e5-8206-5d3dc6961181" name="Default Changelist" comment="">
+    <list default="true" id="1921d803-835c-4bfb-83b3-c3e9f186e10d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../example10/.idea/libraries/org_apache_commons_commons_math3_3_6_1.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_commons_commons_math3_3_6_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example10.iml" beforeDir="false" afterPath="$PROJECT_DIR$/example10.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pr2NLcalc/NonlinearEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pr2NLcalc/NonlinearEquation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pr2SLcalc/SimultaneousEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pr2SLcalc/SimultaneousEquation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../example10/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example10/example10.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../example10/example10.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example10/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../example10/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example10/src/pr2NLcalc/NonlinearEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../example10/src/pr2NLcalc/NonlinearEquation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../example10/src/pr2SLcalc/SimultaneousEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../example10/src/pr2SLcalc/SimultaneousEquation.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,26 +20,17 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pr2NLcalc/NonlinearEquation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="68" column="25" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pr2SLcalc/Matrix.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/pr2NLcalc/NonlinearEquation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="545">
+              <caret line="96" column="29" lean-forward="true" selection-start-line="96" selection-start-column="29" selection-end-line="96" selection-end-column="29" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -49,8 +41,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pr2NLcalc/NonlinearEquation.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/pr2NLcalc/NonlinearEquation.java" />
       </list>
     </option>
   </component>
@@ -66,22 +58,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="example10" type="b2602c69:ProjectViewProjectNode" />
-              <item name="example10" type="462c0819:PsiDirectoryNode" />
+              <item name="example11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="example11" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="example10" type="b2602c69:ProjectViewProjectNode" />
-              <item name="example10" type="462c0819:PsiDirectoryNode" />
+              <item name="example11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="example11" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="example10" type="b2602c69:ProjectViewProjectNode" />
-              <item name="example10" type="462c0819:PsiDirectoryNode" />
+              <item name="example11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="example11" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pr2NLcalc" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -89,7 +81,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -99,11 +91,10 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547607385261" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548211558127" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -120,7 +111,7 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="example10" />
+      <module name="example11" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -139,31 +130,35 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="000f51eb-4831-46e5-8206-5d3dc6961181" name="Default Changelist" comment="" />
-      <created>1547546277430</created>
+      <changelist id="1921d803-835c-4bfb-83b3-c3e9f186e10d" name="Default Changelist" comment="" />
+      <created>1548208255338</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1547546277430</updated>
-      <workItem from="1547546320310" duration="501000" />
-      <workItem from="1547602575924" duration="4790000" />
-      <workItem from="1548208142913" duration="132000" />
+      <updated>1548208255338</updated>
+      <workItem from="1548208279995" duration="3277000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5423000" />
+    <option name="totallyTimeSpent" value="3277000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Learn" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Learn" order="6" />
-      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Messages" weight="0.3297587" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -171,44 +166,40 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Duplicate detector" order="12" show_stripe_button="false" weight="0.3297587" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.3297587" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pr2NLcalc/NonlinearEquation.java">
+    <entry file="file://$PROJECT_DIR$/src/pr2SLcalc/SimultaneousEquation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="25" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pr2SLcalc/Matrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+        <state relative-caret-position="187">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pr2NLcalc/NonlinearEquation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="96" column="29" lean-forward="true" selection-start-line="96" selection-start-column="29" selection-end-line="96" selection-end-column="29" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
@@ -262,7 +253,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>example10</last-edited>
+          <last-edited>example11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

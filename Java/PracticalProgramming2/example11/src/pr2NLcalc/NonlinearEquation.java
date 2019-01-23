@@ -63,7 +63,7 @@ public class NonlinearEquation {
         for (int i = 0; i < MAXIMUM_IT; i++) {
             iteration_++;
             pm = xm;
-            xm =  (x1 * Math.sin(x2 + a) / (x2 + a) - x2 * Math.sin(x1 + a) / (x1 + a)) / (Math.sin(x2 + a) / (x2 + a) - (Math.sin(x1 + a) / (x1 + a)));
+            xm = (x1 * Math.sin(x2 + a) / (x2 + a) - x2 * Math.sin(x1 + a) / (x1 + a)) / (Math.sin(x2 + a) / (x2 + a) - (Math.sin(x1 + a) / (x1 + a)));
             sm = (xm + a) == 0.0 ? 1.0 : Math.signum(Math.sin(xm + a) / (xm + a));
             if (sm.equals(s1)) x1 = xm;
             else x2 = xm;
@@ -72,6 +72,26 @@ public class NonlinearEquation {
                 answer_ = xm;
                 return Boolean.TRUE;
             }
+        }
+
+        return Boolean.FALSE;
+    }
+
+    public Boolean _solveNLEByNewton(double initValue) {
+        Double a = 3.05, x0 = initValue, fx;
+
+        // initValue = 1.19, a = 3.05
+        for (int i = 0; i < MAXIMUM_IT; i++) {
+            iteration_++;
+
+            fx = x0 - (Math.exp(x0) - (a * x0)) / (Math.exp(x0) - a);
+            System.out.println("xNext = " + fx + ", f(xNext) = " + (Math.exp(fx) - (a * fx)));
+            if ((Math.abs(fx - x0)) < EPSILON) {
+                answer_ = x0;
+                return Boolean.TRUE;
+            }
+
+            x0 = fx;
         }
 
         return Boolean.FALSE;
