@@ -7,17 +7,23 @@ class Main {
     public static void main(String[] args) {
         StdUtil stdUtil = new StdUtil();
         ArrayList<Boolean> booleans = new ArrayList<>(Arrays.asList(Boolean.FALSE, Boolean.TRUE, Boolean.FALSE, Boolean.TRUE, Boolean.TRUE, Boolean.FALSE));
-        TreeMap<Double, Double> doubleTreeMap;
+        TreeMap<Double, Double> doubleTreeMapASK, doubleTreeMapBPSK;
 
         System.out.println("It begins.");
         try {
-            doubleTreeMap = stdUtil.encodeBPSK(booleans);
-            stdUtil.showTreeMap(doubleTreeMap);
-            stdUtil.outFileTreeMap(doubleTreeMap, "outEncoded.txt");
-            stdUtil.decodeBPSK(doubleTreeMap);
-            stdUtil.outFileTreeMap(doubleTreeMap, "outDecoded.txt");
-            stdUtil.applyLPF(doubleTreeMap);
-            stdUtil.outFileTreeMap(doubleTreeMap, "outLPF.txt");
+            doubleTreeMapASK = stdUtil.encodeASK(booleans);
+            doubleTreeMapBPSK = stdUtil.encodeBPSK(booleans);
+            stdUtil.outFileTreeMap(doubleTreeMapASK, "outEncoded_ASK.txt");
+            stdUtil.decodeASK(doubleTreeMapASK);
+            stdUtil.outFileTreeMap(doubleTreeMapASK, "outDecoded_ASK.txt");
+            stdUtil.applyLPF(doubleTreeMapASK);
+            stdUtil.outFileTreeMap(doubleTreeMapASK, "outLPF_ASK.txt");
+            stdUtil.showTreeMap(doubleTreeMapBPSK);
+            stdUtil.outFileTreeMap(doubleTreeMapBPSK, "outEncoded_BPSK.txt");
+            stdUtil.decodeBPSK(doubleTreeMapBPSK);
+            stdUtil.outFileTreeMap(doubleTreeMapBPSK, "outDecoded_BPSK.txt");
+            stdUtil.applyLPF(doubleTreeMapBPSK);
+            stdUtil.outFileTreeMap(doubleTreeMapBPSK, "outLPF_BPSK.txt");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

@@ -29,6 +29,25 @@ class StdUtil {
         treeMap.keySet().stream().map(key -> key + ", " + treeMap.get(key)).forEach(printWriter::println);
     }
 
+    public TreeMap<Double, Double> encodeASK(ArrayList<Boolean> booleans) {
+        TreeMap<Double, Double> doubleTreeMap = new TreeMap<>();
+        Integer bitCnt = 0;
+
+        for (Boolean b : booleans) {
+            if (b) for (int n = 0; n < fSampling / bitRate; n++)
+                doubleTreeMap.put((double) n / fSampling + bitCnt.doubleValue() / bitRate.doubleValue(), ac * Math.cos(2 * Math.PI * fc * n / fSampling + pc));
+            else for (int n = 0; n < fSampling / bitRate; n++)
+                doubleTreeMap.put((double) n / fSampling + bitCnt.doubleValue() / bitRate.doubleValue(), 0.0);
+            bitCnt++;
+        }
+
+        return doubleTreeMap;
+    }
+
+    public void decodeASK(TreeMap<Double, Double> doubleTreeMap) {
+        doubleTreeMap.keySet().forEach(key -> doubleTreeMap.replace(key, doubleTreeMap.get(key) * ac * Math.cos(2 * Math.PI * fc * key + pc)));
+    }
+
     public TreeMap<Double, Double> encodeBPSK(ArrayList<Boolean> booleans) {
         TreeMap<Double, Double> doubleTreeMap = new TreeMap<>();
         Integer bitCnt = 0;

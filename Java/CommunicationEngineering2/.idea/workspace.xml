@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1412e353-052e-4537-ae43-ee16565ac8ed" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/StdUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outDecoded.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outEncoded.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/outLPF.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StdUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StdUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -62,7 +65,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="255">
+              <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,8 +83,10 @@
                 <element signature="e#390#448#0" />
                 <element signature="method#showTreeMap#0;class#StdUtil#0" />
                 <element signature="method#outFileTreeMap#0;class#StdUtil#0" />
-                <element signature="method#encodeBPSK#0;class#StdUtil#0" />
+                <element signature="method#encodeASK#0;class#StdUtil#0" />
                 <element signature="method#decodeBPSK#0;class#StdUtil#0" />
+                <element signature="method#encodeBPSK#1;class#StdUtil#0" />
+                <element signature="method#decodeBPSK#1;class#StdUtil#0" />
                 <element signature="method#applyLPF#0;class#StdUtil#0" />
               </folding>
             </state>
@@ -112,8 +118,8 @@
       <list>
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/StdUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/StdUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
       </list>
     </option>
   </component>
@@ -129,6 +135,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -159,7 +166,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -169,7 +175,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548323612944" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548405333657" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -297,6 +303,7 @@
       <workItem from="1546759831672" duration="3442000" />
       <workItem from="1548231926210" duration="20924000" />
       <workItem from="1548323953355" duration="34000" />
+      <workItem from="1548396105299" duration="3836000" />
     </task>
     <servers />
   </component>
@@ -309,7 +316,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24400000" />
+    <option name="totallyTimeSpent" value="28236000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -323,7 +330,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498" visible="true" weight="0.25637585" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498" visible="true" weight="0.25973153" />
       <window_info id="Structure" order="1" sideWeight="0.502" side_tool="true" weight="0.25302014" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -385,8 +392,10 @@
             <element signature="e#390#448#0" />
             <element signature="method#showTreeMap#0;class#StdUtil#0" />
             <element signature="method#outFileTreeMap#0;class#StdUtil#0" />
-            <element signature="method#encodeBPSK#0;class#StdUtil#0" />
+            <element signature="method#encodeASK#0;class#StdUtil#0" />
             <element signature="method#decodeBPSK#0;class#StdUtil#0" />
+            <element signature="method#encodeBPSK#1;class#StdUtil#0" />
+            <element signature="method#decodeBPSK#1;class#StdUtil#0" />
             <element signature="method#applyLPF#0;class#StdUtil#0" />
           </folding>
         </state>
@@ -394,7 +403,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="255">
+          <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
