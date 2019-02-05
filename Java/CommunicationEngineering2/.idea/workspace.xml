@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1412e353-052e-4537-ae43-ee16565ac8ed" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outDecoded.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/outEncoded.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/outLPF.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StdUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StdUtil.java" afterDir="false" />
-    </list>
+    <list default="true" id="1412e353-052e-4537-ae43-ee16565ac8ed" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -66,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+              <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,8 +78,6 @@
                 <element signature="method#outFileTreeMap#0;class#StdUtil#0" />
                 <element signature="method#encodeASK#0;class#StdUtil#0" />
                 <element signature="method#decodeBPSK#0;class#StdUtil#0" />
-                <element signature="method#encodeBPSK#1;class#StdUtil#0" />
-                <element signature="method#decodeBPSK#1;class#StdUtil#0" />
                 <element signature="method#applyLPF#0;class#StdUtil#0" />
               </folding>
             </state>
@@ -135,8 +126,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -304,6 +295,7 @@
       <workItem from="1548231926210" duration="20924000" />
       <workItem from="1548323953355" duration="34000" />
       <workItem from="1548396105299" duration="3836000" />
+      <workItem from="1549337193617" duration="46000" />
     </task>
     <servers />
   </component>
@@ -316,7 +308,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28236000" />
+    <option name="totallyTimeSpent" value="28282000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -329,8 +321,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498" visible="true" weight="0.25973153" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498" visible="true" weight="0.26308724" />
       <window_info id="Structure" order="1" sideWeight="0.502" side_tool="true" weight="0.25302014" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -384,6 +377,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out.txt" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/StdUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -397,16 +400,6 @@
             <element signature="method#encodeBPSK#1;class#StdUtil#0" />
             <element signature="method#decodeBPSK#1;class#StdUtil#0" />
             <element signature="method#applyLPF#0;class#StdUtil#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
