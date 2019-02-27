@@ -1,0 +1,26 @@
+﻿////////////////////////////////////////////////////////////////////
+//白色ガウス性雑音作成関数
+double gauss(void)//正規乱数（ボックスミュラー法を利用）
+{
+    double x1,x2,gauss1,gauss2,sd=1.0;//sdは分散
+    double pi=3.14159265358979;
+
+    x1=(double)rand()/(RAND_MAX);//0-1の一様乱数１
+	while(x1 == 0.0){
+		x1=(double)rand()/(RAND_MAX);
+	}
+    x2=(double)rand()/(RAND_MAX);//0-1の一様乱数２
+    gauss1=sqrt(-2.0*log(x1))*cos(2.0*pi*x2)*sqrt(sd);
+    gauss2=sqrt(-2.0*log(x1))*sin(2.0*pi*x2)*sqrt(sd);//gauss1と独立な正規乱数
+    return gauss1;
+}
+////////////////////////////////////////////////////////////////////
+//１次IIRフィルタによる有色信号作成関数
+double colored(void)
+{
+	double color;
+	static double oldcolor=0.0;
+	color = gauss() + 0.95*oldcolor;
+	oldcolor = color;
+	return color;
+}

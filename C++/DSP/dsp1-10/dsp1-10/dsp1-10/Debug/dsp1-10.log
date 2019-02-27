@@ -1,0 +1,19 @@
+﻿  dsp1-10.cpp
+c:\users\s_cla\documents\repos\kosen\c++\dsp\dsp1-10\dsp1-10\dsp1-10\dsp1-10.cpp(36): warning C4091: 'static ': 変数が何も宣言されていないときは、'SetRiffChunk' の左辺を無視します。
+c:\users\s_cla\documents\repos\kosen\c++\dsp\dsp1-10\dsp1-10\dsp1-10\dsp1-10.cpp(47): warning C4091: 'static ': 変数が何も宣言されていないときは、'SetFMTChunk' の左辺を無視します。
+c:\users\s_cla\documents\repos\kosen\c++\dsp\dsp1-10\dsp1-10\dsp1-10\dsp1-10.cpp(52): warning C4091: 'static ': 変数が何も宣言されていないときは、'SetDataChunk' の左辺を無視します。
+c:\users\s_cla\documents\repos\kosen\c++\dsp\dsp1-10\dsp1-10\dsp1-10\dsp1-10.cpp(88): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\s_cla\documents\repos\kosen\c++\dsp\dsp1-10\dsp1-10\dsp1-10\dsp1-10.cpp(97): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\s_cla\documents\repos\kosen\c++\dsp\dsp1-10\dsp1-10\dsp1-10\dsp1-10.cpp(97): warning C4244: '=': 'double' から '_Ty' への変換です。データが失われる可能性があります。
+          with
+          [
+              _Ty=short
+          ]
+c:\users\s_cla\documents\repos\kosen\c++\dsp\dsp1-10\dsp1-10\dsp1-10\dsp1-10.cpp(98): warning C4244: '=': 'double' から '_Ty' への変換です。データが失われる可能性があります。
+          with
+          [
+              _Ty=short
+          ]
+c:\users\s_cla\documents\repos\kosen\c++\dsp\dsp1-10\dsp1-10\dsp1-10\dsp1-10.cpp(100): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+c:\users\s_cla\documents\repos\kosen\c++\dsp\dsp1-10\dsp1-10\dsp1-10\dsp1-10.cpp(109): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+  dsp1-10.vcxproj -> C:\Users\s_cla\Documents\repos\kosen\C++\DSP\dsp1-10\dsp1-10\Debug\dsp1-10.exe
