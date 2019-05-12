@@ -11,7 +11,7 @@
                 "-Wall",
                 "-g",
                 "-O0",
-                "ex1_pt1~4.cpp"
+                "ex2_ptA~B.cpp"
             ],
             "problemMatcher": [
                 "$gcc"
