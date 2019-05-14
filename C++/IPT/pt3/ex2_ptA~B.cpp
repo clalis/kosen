@@ -16,24 +16,23 @@ public:
     TriComp(int u, int v, int w) : a(u), b(v), c(w) {}
     ~TriComp() {}
 
-    int getMaxByElif()
-    {
-        int max;
-
-        if (a >= b)
-            max = a;
-        else
-            max = b;
-
-        return max;
-    }
-
-    int getMaxByTernary() { return ((a >= b) ? a : b); }
-
-    int getMaxBySAR() // SAR : Shift Arithmetic Right
+    int getMax()
     {
         int max = (a - b) >> 31;
-        return (a & ~max) | (b & max);
+        max = (((a & ~max) | (b & max)) - c) >> 31;
+        return (a & ~max) | (c & max);
+    }
+
+    int getMin()
+    {
+        int max = (a - b) >> 31;
+        max = (((a & max) | (b & ~max)) - c) >> 31;
+        return (a & max) | (c & ~max);
+    }
+
+    int getSum()
+    {
+        return a + b + c;
     }
 };
 
@@ -41,9 +40,9 @@ int main()
 {
     TriComp triComp(12, 73, 77);
 
-    cout << triComp.getMaxByElif() << endl;
-    cout << triComp.getMaxByTernary() << endl;
-    cout << triComp.getMaxBySAR() << endl;
+    cout << triComp.getMax() << endl;
+    cout << triComp.getMin() << endl;
+    cout << triComp.getSum() - triComp.getMax() - triComp.getMin() << endl;
 
     return 0;
 }
