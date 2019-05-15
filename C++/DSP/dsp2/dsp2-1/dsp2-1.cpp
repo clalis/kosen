@@ -33,11 +33,11 @@ public:
 		ofstream writing_file;
 		writing_file.open(fn, ios::out);
 
-		cout << "writing " << fn << "..." << endl;
+		cout << "Writing " << fn << "..." << endl;
 
 		for (auto each : out)	writing_file << each.real() << endl;
 
-		cout << "output : " << fn << endl;
+		cout << "Output : " << fn << endl;
 	}
 };
 
@@ -76,34 +76,33 @@ private:
 	// FFT メイン
 	vector<complex<double>> main(vector<complex<double>> in, int N)
 	{
-		int r_big = 1, r_sma = N / 2; //初期値を与えておく
-		int i, j, k, out1, out2, nk;
+		int r_big = 1, r_sma = N / 2;	// 初期値
+		int out1, out2, nk;
 		vector<complex<double>> wnk, out;
 		vector<int> bits;
 		int r = (int)log2(N);
 
-		//回転子の生成とビットリバースの生成
+		// 回転子の生成とビットリバースの生成
 		wnk = twid(N);
 		bits = bit_r(N);
 
-		//初期化
-		for (i = 0; i < N; i++)	out.push_back(in[i]);
+		// 初期化
+		for (size_t i = 0; i < N; i++)	out.push_back(in[i]);
 
-		//ビットリバース
-		for (i = 0; i < N; i++)	out[bits[i]] = in[i];
+		// ビットリバース
+		for (size_t i = 0; i < N; i++)	out[bits[i]] = in[i];
 
-
-		//メイン
+		// メイン
 		complex<double> dummy;
-		for (i = 0; i < r; i++)
+		for (size_t i = 0; i < r; i++)
 		{
-			for (j = 0; j < r_big; j++)
+			for (size_t j = 0; j < r_big; j++)
 			{
-				for (k = 0; k < r_sma; k++)
+				for (size_t k = 0; k < r_sma; k++)
 				{
 					out1 = r_big * 2 * k + j;
 					out2 = out1 + r_big;
-					nk = j * r_sma;
+					nk = static_cast<int>(j) * r_sma;
 
 					dummy = out[out2] * wnk[nk];
 					out[out2] = out[out1] - dummy;
@@ -119,41 +118,42 @@ private:
 public:
 	vector<complex<double>> fft(vector<complex<double>> in, int points)
 	{
-		int i, N = (int)in.size();
+		int N = (int)in.size();
 		vector<complex<double>> out;
-		for (i = 0; i < points; i++)	out.push_back(0);
-		for (i = 0; i < N; i++)	out[i] = in[i];
+		for (size_t i = 0; i < points; i++)	out.push_back(0);
+		for (size_t i = 0; i < N; i++)	out[i] = in[i];
+
 		return main(out, points);
 	}
 
 	vector<complex<double>> ifft(vector<complex<double>> in, int points, int division)
 	{
-		int i, N = (int)in.size();
+		int N = (int)in.size();
 		vector<complex<double>> out;
-		for (i = 0; i < N; i++) in[i].imag(-in[i].imag());
+		for (size_t i = 0; i < N; i++) in[i].imag(-in[i].imag());
 		out = main(in, points);
-		for (i = 0; i < points; i++)	out[i] /= (double)points * (double)division;
+		for (size_t i = 0; i < points; i++)	out[i] /= (int64_t)points * (int64_t)division;
 
 		return out;
 	}
 
 	vector<complex<double>> spectral(vector<complex<double>> in)
 	{
-		int i, N = (int)in.size();
+		int N = (int)in.size();
 		vector<complex<double>> out;
-		for (i = 0; i < N; i++) out.push_back(0);
-		for (i = 0; i < N; i++) out[i].real(in[i].real() * in[i].real() + in[i].imag() * in[i].imag());
+		for (size_t i = 0; i < N; i++) out.push_back(0);
+		for (size_t i = 0; i < N; i++) out[i].real(in[i].real() * in[i].real() + in[i].imag() * in[i].imag());
 
 		return out;
 	}
 
 	vector<complex<double>> innner(vector<complex<double>> in1, vector<complex<double>> in2)
 	{
-		int i, N = (int)in1.size();
+		int N = static_cast<int>(in1.size());
 		vector<complex<double>> out;
-		for (i = 0; i < N; i++) out.push_back(0);
-		for (i = 0; i < N; i++) in1[i].imag(-in1[i].imag());	// 複素共役をとる
-		for (i = 0; i < N; i++) out[i] = in1[i] * in2[i];
+		for (size_t i = 0; i < N; i++) out.push_back(0);
+		for (size_t i = 0; i < N; i++) in1[i] = conj(in1[i]);
+		for (size_t i = 0; i < N; i++) out[i] = in1[i] * in2[i];
 
 		return out;
 	}
@@ -195,8 +195,8 @@ int main(int argc, const char* argv[])
 	cout << "Enter output filename. : ";
 	cin >> output_fn;
 
-	FileManager filemanager;
-	data = filemanager.readFile(input_fn1);
+	FileManager fileManager;
+	data = fileManager.readFile(input_fn1);
 	for (auto each : data)
 	{
 		complex<double> comp(each, 0);
@@ -204,7 +204,7 @@ int main(int argc, const char* argv[])
 	}
 	if (input_num == 1)
 	{
-		data = filemanager.readFile(input_fn2);
+		data = fileManager.readFile(input_fn2);
 		for (auto each : data)
 		{
 			complex<double> comp(each, 0);
@@ -214,23 +214,23 @@ int main(int argc, const char* argv[])
 
 	FFT fft;
 	int size = (int)xn1.size();
-	int fftpoint = fft.estimatePower(size);
+	int fftPoint = fft.estimatePower(size);
 
 	start = chrono::system_clock::now();
 
-	yn1 = fft.fft(xn1, fftpoint);
+	yn1 = fft.fft(xn1, fftPoint);
 	if (input_num == 0) sp = fft.spectral(yn1);
 	else
 	{
-		yn2 = fft.fft(xn2, fftpoint);
+		yn2 = fft.fft(xn2, fftPoint);
 		sp = fft.innner(yn1, yn2);
 	}
-	out = fft.ifft(sp, fftpoint, size);
+	out = fft.ifft(sp, fftPoint, size);
 
 	end = chrono::system_clock::now();
-	cout << "Duration time : " << chrono::duration_cast<chrono::milliseconds>(end - start).count() << "[ms]" << std::endl;
+	cout << "Duration time : " << chrono::duration_cast<chrono::microseconds>(end - start).count() << "[us]" << endl;
 
-	filemanager.writeFile(output_fn, out);
+	fileManager.writeFile(output_fn, out);
 
 	return 0;
 }

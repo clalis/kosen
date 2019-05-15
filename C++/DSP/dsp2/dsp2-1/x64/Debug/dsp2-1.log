@@ -1,3 +1,5 @@
 ﻿  dsp2-1.cpp
-C:\Users\s_cla\Documents\repos\kosen\C++\DSP\dsp2\dsp2-1\dsp2-1.cpp(184): warning C4566: ユニバーサル文字名 '\u012B' によって表示されている文字は、現在のコード ページ (932) で表示できません
-  dsp2-1.vcxproj -> C:\Users\s_cla\Documents\repos\kosen\C++\DSP\dsp2\x64\Debug\dsp2-1.exe
+C:\Users\Sina\Documents\repos\kosen\C++\DSP\dsp2\dsp2-1\dsp2-1.cpp(103): warning C4267: '=': 'size_t' から 'int' に変換しました。データが失われているかもしれません。
+C:\Users\Sina\Documents\repos\kosen\C++\DSP\dsp2\dsp2-1\dsp2-1.cpp(135): warning C4244: '引数': 'int64_t' から 'const std::complex<double>::_Ty' への変換です。データが失われる可能性があります。
+C:\Users\Sina\Documents\repos\kosen\C++\DSP\dsp2\dsp2-1\dsp2-1.cpp(184): warning C4566: ユニバーサル文字名 '\u012B' によって表示されている文字は、現在のコード ページ (932) で表示できません
+  dsp2-1.vcxproj -> C:\Users\Sina\Documents\repos\kosen\C++\DSP\dsp2\x64\Debug\dsp2-1.exe
