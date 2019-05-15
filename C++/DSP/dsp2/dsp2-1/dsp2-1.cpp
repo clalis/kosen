@@ -132,7 +132,7 @@ public:
 		vector<complex<double>> out;
 		for (i = 0; i < N; i++) in[i].imag(-in[i].imag());
 		out = main(in, points);
-		for (i = 0; i < points; i++)	out[i] /= points * division;
+		for (i = 0; i < points; i++)	out[i] /= (double)points * (double)division;
 
 		return out;
 	}
