@@ -1,7 +1,7 @@
 ﻿// dsp2-1.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
 //
 
-// R01	23_Shīna	DSP2-1-2
+// R01	23_Shīna	DSP2-1-3
 
 #include "DSP.h"
 
@@ -181,7 +181,7 @@ int main(int argc, const char* argv[])
 	int input_num;
 	auto start = chrono::system_clock::now(), end = chrono::system_clock::now();
 
-	cout << "R01\t23_Shīna\tDSP2-1-2" << endl;
+	cout << "R01\t23_Shīna\tDSP2-1-3" << endl;
 	cout << "Put files at same directory." << endl;
 	cout << "(Auto-Corr : 0 | Cross-Corr : 1) : ";
 	cin >> input_num;
