@@ -1,0 +1,5 @@
+﻿  dsp2-2.cpp
+C:\Users\s_cla\Documents\repos\kosen\C++\DSP\dsp2\dsp2-2\DSP.h(43,86): warning C4244:  '引数': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\s_cla\Documents\repos\kosen\C++\DSP\dsp2\dsp2-2\DSP.h(43,54): warning C4244:  '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\s_cla\Documents\repos\kosen\C++\DSP\dsp2\dsp2-2\dsp2-2.cpp(25,10): warning C4566:  ユニバーサル文字名 '\u012B' によって表示されている文字は、現在のコード ページ (932) で表示できません
+  dsp2-2.vcxproj -> C:\Users\s_cla\Documents\repos\kosen\C++\DSP\dsp2\x64\Debug\dsp2-2.exe
