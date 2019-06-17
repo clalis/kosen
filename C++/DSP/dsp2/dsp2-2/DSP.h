@@ -6,7 +6,10 @@
 #include <cmath>
 #include <fstream>
 #include <iostream>
+#include <string>
 #include "Eigen/Dense"
+#include "bitmap/bitmap_image.h"
+
 
 using namespace Eigen;
 using namespace std;

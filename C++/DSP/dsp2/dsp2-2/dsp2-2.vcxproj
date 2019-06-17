@@ -154,7 +154,11 @@
     <ClCompile Include="dsp2-2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="bitmap\bitmap_image.h" />
     <ClInclude Include="DSP.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\dsp2-2_files\samp.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
