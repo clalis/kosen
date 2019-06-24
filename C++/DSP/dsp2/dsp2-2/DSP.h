@@ -48,3 +48,34 @@ MatrixXf DCT::cnk()
 
 	return m;
 }
+
+class MyBMP
+{
+public:
+	MyBMP() :r(0.0), g(0.0), b(0.0), y(0.0), cb(0.0), cr(0.0) {}
+	MyBMP(rgb_t colour) :y(0.0), cb(0.0), cr(0.0)
+	{
+		r = static_cast<double>(colour.red);
+		g = static_cast<double>(colour.green);
+		b = static_cast<double>(colour.blue);
+	}
+
+	~MyBMP()
+	{
+	}
+
+	inline double rgbtToInt(char v) { return static_cast<unsigned int>(v); }
+
+	inline double getY()
+	{
+		rgb_to_ycbcr(1, &r, &g, &b, &y, &cb, &cr);
+		y = (static_cast<int>(y) + 112) >> 8;
+		y += 16;
+
+		return y;
+	}
+
+
+private:
+	double r, g, b, y, cb, cr;
+};
