@@ -38,19 +38,24 @@ inline Jacobi::~Jacobi()
 {
 }
 
-inline void Jacobi::calc_jacobi()
+void Jacobi::calc_jacobi()
 {
-	while (true)
+	for (size_t i = 0; i < a.rows(); i++)
 	{
-		bool finish = true;
+		while (true)
+		{
+			bool finish = true;
 
-		x1 = a * x0;
-		lambda = x1.transpose() * x0;
-		x1.normalize();
-		if ((x1 - x0).norm() > epsilon)	finish = false;
-		x0 = x1;
+			x1 = a * x0;
+			lambda = x1.transpose() * x0;
+			x1.normalize();
+			if ((x1 - x0).norm() > epsilon)	finish = false;
+			x0 = x1;
 
+			//cout << "lambda= " << lambda << endl << "Eigenvecor:" << endl << x1 << endl << endl;
+			if (finish) break;
+		}
+		a -= lambda * x1 * x1.transpose();
 		cout << "lambda= " << lambda << endl << "Eigenvecor:" << endl << x1 << endl << endl;
-		if (finish) return;
 	}
 }
