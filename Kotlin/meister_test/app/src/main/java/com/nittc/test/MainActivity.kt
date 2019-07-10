@@ -1,14 +1,14 @@
 package com.nittc.test
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 val tag = "MY_APP"
 
 class MainActivity : AppCompatActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -16,6 +16,11 @@ class MainActivity : AppCompatActivity() {
             Log.i(tag, "User pressed button $it")
             textHello.text = getString(R.string.goodbye)
             this.finish()
+        }
+        btnRecycleView.setOnClickListener {
+            Log.i(getString(R.string.recycle_view), "User pressed button $it")
+            val intent = Intent(this, RecyclerViewActivity::class.java)
+            startActivity(intent)
         }
     }
 }
