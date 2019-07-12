@@ -1,7 +1,7 @@
 ﻿// dsp2-3.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
 //
 
-// R01	23_Shīna	DSP2-3-2
+// R01	23_Shīna	DSP2-3-3
 
 #include "Jacobi.h"
 
@@ -10,7 +10,7 @@ int main()
 {
 	Jacobi jac;
 
-	cout << "R01\t23_Shīna\tDSP2-3-2" << endl << endl;
+	cout << "R01\t23_Shīna\tDSP2-3-3" << endl << endl;
 
 	jac.calc_jacobi();
 

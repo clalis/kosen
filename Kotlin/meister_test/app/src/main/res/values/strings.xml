@@ -3,4 +3,5 @@
     <string name="hello_world">Hello world!</string>
     <string name="goodbye">Goodbye!</string>
     <string name="greeting">GREETING</string>
+    <string name="recycle_view">Recycle view</string>
 </resources>
