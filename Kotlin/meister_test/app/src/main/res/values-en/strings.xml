@@ -5,4 +5,8 @@
     <string name="goodbye">Goodbye!</string>
     <string name="greeting">GREETING</string>
     <string name="recycle_view">Recycle view</string>
+    <string name="files_saved">Files saved\\u1F642</string>
+    <string name="file_content">File content:</string>
+    <string name="file_faild">Read file failed</string>
+    <string name="files_view">Files view</string>
 </resources>

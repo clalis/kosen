@@ -22,5 +22,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, RecyclerViewActivity::class.java)
             startActivity(intent)
         }
+        btnFilesView.setOnClickListener {
+            Log.i(getString(R.string.files_view), "User pressed button $it")
+            val intent = Intent(this, StorageWriteActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
