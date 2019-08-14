@@ -1,0 +1,4 @@
+C:\Users\s_cla\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\192.5728.100\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" C:\Users\s_cla\Documents\repos\kosen\C++\IPT\pt14
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/s_cla/Documents/repos/kosen/C++/IPT/pt14/cmake-build-debug
