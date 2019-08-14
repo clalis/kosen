@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/s_cla/Documents/repos/kosen/C++/IPT/pt14/Pt13.cpp
+Pt13.h
+C:/Users/s_cla/Documents/repos/kosen/C++/IPT/pt14/Pt13.h
+
+C:/Users/s_cla/Documents/repos/kosen/C++/IPT/pt14/Pt13.h
+cmath
+-
+iostream
+-
+iterator
+-
+numeric
+-
+random
+-
+set
+-
+string
+-
+utility
+-
+vector
+-
+
