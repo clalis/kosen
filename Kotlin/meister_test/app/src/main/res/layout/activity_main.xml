@@ -26,13 +26,18 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintTop_toBottomOf="@+id/textHello"
             android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+
     <Button
-            android:text="@string/recycle_view"
+            android:id="@+id/btnRecycleView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/btnRecycleView"
-            app:layout_constraintTop_toBottomOf="@+id/btnGreet"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="8dp"/>
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/recycle_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCounter" />
     <Button
             android:text="@string/files_view"
             android:layout_width="wrap_content"
@@ -41,5 +46,17 @@
             app:layout_constraintTop_toBottomOf="@+id/btnRecycleView" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp"/>
+
+    <Button
+            android:id="@+id/btnCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/counter_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnGreet" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

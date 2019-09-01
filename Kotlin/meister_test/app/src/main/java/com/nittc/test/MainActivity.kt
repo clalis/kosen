@@ -6,7 +6,7 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
-val tag = "MY_APP"
+const val tag: String = "MY_APP"
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,6 +16,11 @@ class MainActivity : AppCompatActivity() {
             Log.i(tag, "User pressed button $it")
             textHello.text = getString(R.string.goodbye)
             this.finish()
+        }
+        btnCounter.setOnClickListener {
+            Log.i(getString(R.string.counter_view), "User pressed button $it")
+            val intent = Intent(this, CounterActivity::class.java)
+            startActivity(intent)
         }
         btnRecycleView.setOnClickListener {
             Log.i(getString(R.string.recycle_view), "User pressed button $it")

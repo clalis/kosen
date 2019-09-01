@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CounterActivity">
+
+    <TextView
+            android:id="@+id/counterTextView"
+            android:layout_width="64sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="128dp"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/counterTextView"
+            app:layout_constraintEnd_toStartOf="@+id/counterTextView"
+            app:layout_constraintTop_toTopOf="@+id/counterTextView">
+
+        <Button
+                android:id="@+id/plusButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:background="@android:drawable/arrow_up_float"
+                android:text="@string/counter_plus" />
+
+        <Button
+                android:id="@+id/minusButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:drawable/arrow_down_float"
+                android:text="@string/counter_minus" />
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/resetButton"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/sarpanch_bold"
+            android:text="@string/counter_reset"
+            app:layout_constraintEnd_toEndOf="@+id/counterTextView"
+            app:layout_constraintStart_toStartOf="@+id/counterTextView"
+            app:layout_constraintTop_toBottomOf="@+id/counterTextView" />
+
+    <RadioGroup
+            android:id="@+id/decimalRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:checkedButton="@id/decRadioButton"
+            app:layout_constraintBottom_toBottomOf="@+id/counterTextView"
+            app:layout_constraintStart_toEndOf="@+id/counterTextView"
+            app:layout_constraintTop_toTopOf="@+id/counterTextView">
+
+        <RadioButton
+                android:id="@+id/decRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/counter_decimal" />
+
+        <RadioButton
+                android:id="@+id/hexRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/counter_hexadecimal" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

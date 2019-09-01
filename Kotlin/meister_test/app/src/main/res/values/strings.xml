@@ -3,9 +3,19 @@
     <string name="hello_world">Hello world!</string>
     <string name="goodbye">Goodbye!</string>
     <string name="greeting">GREETING</string>
+    <string name="counter_plus">+</string>
+    <string name="counter_minus">-</string>
+    <string name="counter_reset">Reset</string>
+    <string name="counter_decimal">DEC</string>
+    <string name="counter_hexadecimal">HEX</string>
+    <string name="counter_view">Counter</string>
     <string name="recycle_view">Recycle view</string>
     <string name="files_view">Files view</string>
-    <string name="files_saved">Files saved\u1F642</string>
-    <string name="file_faild">Read file failed</string>
+    <string name="file_text_hint">Enter something.</string>
+    <string name="file_save">Save to file</string>
+    <string name="files_saved">Files saved\u1F642(I couldn\'t set Emoji)</string>
+    <string name="file_write">Write to file</string>
+    <string name="file_read">Read from file</string>
+    <string name="file_failed">Read file failed</string>
     <string name="file_content">File content:</string>
 </resources>

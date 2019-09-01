@@ -3,7 +3,6 @@ package com.nittc.test
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_contact_detail.*
-import kotlinx.android.synthetic.main.contact_item.*
 import kotlinx.android.synthetic.main.contact_item.textViewName
 
 class PresidentDetailActivity : AppCompatActivity() {
